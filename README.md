@@ -38,7 +38,7 @@ On Xbox, copy the gen folder and the xex from "_build/xbox/" to the location you
 
 Make sure you clear your song cache, as well as your system cache.
 
-To clear song cache, navigate to Storage>The Beatles Rock Band> and delete the song cache.
+To clear song cache, navigate to Storage>LEGO Rock Band> and delete the song cache.
 
 To clear system cache, navigate to Storage, and press Y to clear the system cache.
 
