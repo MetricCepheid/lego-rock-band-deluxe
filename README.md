@@ -10,6 +10,7 @@ This Repo contains everything you need to build an ark for LEGO Rock Band Deluxe
 
 ### Quality of Life
 * Fast start executable modification (360 only)
+* No family friendly rating check
 
 ## Install
 
