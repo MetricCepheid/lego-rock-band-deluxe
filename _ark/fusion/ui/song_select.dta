@@ -22,6 +22,8 @@
    (file
       "song_select_details.milo")
    (enter
+      {if {is_leader_local} {session send_msg_to_all {` (set $speedmod {, $leaderspeed}) kNetReliable}}}
+	  {set $speedmod $leaderspeed}
       {loading.mnm
          animate
          (loop)})

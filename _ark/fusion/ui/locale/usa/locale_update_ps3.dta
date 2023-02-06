@@ -527,3 +527,17 @@
 (loading_trivia897 "Smash Mouth was more of a punk band when they started, which is apparent on most of the tracks on Fush Yu Mang. \qWalkin' on the Sun\q is an outlier, but since it was the hit, that's the sound they had to emulate.")
 (loading_trivia898 "Before playing local pubs, \qThe Cure\q would play dances at their Methodist church, where they were members of the youth club.")
 (loading_trivia899 "They chose their band name using a technique one of their heroes, David Bowie, sometimes used to compose lyrics: cutting up phrases and selecting one randomly.")
+(main_store
+   "DX OPTIONS")
+(dx_dxoptions
+   "DX OPTIONS")
+(dx_creditsbutton
+   "test")
+(dx_modifygamebutton
+   "SPEED / FRAMERATE")
+(speed_msg
+   "SONG SPEED: %d%%")
+(trackspeed_msg
+   "NOTE SPEED: %d%%")
+(fps_msg
+   "VENUE FRAMERATE: %dFPS")

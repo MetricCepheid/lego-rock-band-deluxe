@@ -1,3 +1,4 @@
+#include ../init.dta
 #define DEFAULT_SPLASH_ALPHA_THRESHOLD
 (175.0)
 {new
@@ -213,6 +214,7 @@
    (helpbar
       ((min_height 0)))
    (enter
+      INIT_MODIFIERS
       {meta set_meta_music_occlude TRUE}
       {meta music_start})}
 {new
