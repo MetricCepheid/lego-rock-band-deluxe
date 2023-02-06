@@ -1648,6 +1648,19 @@
    (game_origin rb1)
    (rating 1)
    (short_version 0))
+(runtothehills
+   (version 1)
+   (format 3)
+   (year_released 1982)
+   (song_location 2)
+   (album_art FALSE)
+   (pack_name
+      "Rock Band Impossible Songs")
+   (base_points 691570)
+   (song_id 32)
+   (game_origin rb1)
+   (rating 2)
+   (short_version 0))
 (runtothehills2
    (format 4)
    (song_id 1005584)
@@ -3712,6 +3725,22 @@
    (game_origin rb1)
    (rating 2)
    (short_version 0))
+(entersandman
+   (version 1)
+   (format 4)
+   (album_art TRUE)
+   (year_released 1991)
+   (song_location 2)
+   (album_name
+      "Metallica")
+   (album_track_number 1)
+   (pack_name
+      "Rock Band Nightmare Songs")
+   (base_points 652848)
+   (song_id 13)
+   (game_origin rb1)
+   (rating 2)
+   (short_version 0))
 (epic
    (version 1)
    (format 4)
@@ -4719,6 +4748,18 @@
    (album_track_number 6)
    (base_points 398020)
    (song_id 1005093)
+   (game_origin rb1)
+   (rating 2)
+   (short_version 0))
+(paranoid
+   (version 1)
+   (format 4)
+   (song_location 2)
+   (year_released 1970)
+   (pack_name
+      "Rock Band Challenging Songs")
+   (base_points 429453)
+   (song_id 30)
    (game_origin rb1)
    (rating 2)
    (short_version 0))
