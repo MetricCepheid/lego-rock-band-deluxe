@@ -1,0 +1,1079 @@
+i> 00000B28 Build: canary_experimental@333d7c276 on Feb  5 2023
+i> 00000B28 Storage root: C:\Users\music\Documents\GitHub\lego-rock-band-deluxe\_xenia
+i> 00000B28 Loaded config: C:\Users\music\Documents\GitHub\lego-rock-band-deluxe\_xenia\xenia-canary.config.toml
+i> 00000B28 Content root: C:\Users\music\Documents\GitHub\lego-rock-band-deluxe\_xenia\content
+i> 00000B28 Cache root: C:\Users\music\Documents\GitHub\lego-rock-band-deluxe\_xenia\cache
+i> 00001A8C winkey: "0x08" binds key 0x8 to controller input GUIDE.
+i> 00001A8C winkey: "^A" binds key 0x41 to controller input DPAD_LEFT.
+i> 00001A8C winkey: "^D" binds key 0x44 to controller input DPAD_RIGHT.
+i> 00001A8C winkey: "^S" binds key 0x53 to controller input DPAD_DOWN.
+i> 00001A8C winkey: "^W" binds key 0x57 to controller input DPAD_UP.
+i> 00001A8C winkey: "_A" binds key 0x41 to controller input LEFT_THUMB_LEFT.
+i> 00001A8C winkey: "_D" binds key 0x44 to controller input LEFT_THUMB_RIGHT.
+i> 00001A8C winkey: "_S" binds key 0x53 to controller input LEFT_THUMB_DOWN.
+i> 00001A8C winkey: "_W" binds key 0x57 to controller input LEFT_THUMB_UP.
+i> 00001A8C winkey: "F" binds key 0x46 to controller input LEFT_THUMB_PRESSED.
+i> 00001A8C winkey: "0x26" binds key 0x26 to controller input RIGHT_THUMB_UP.
+i> 00001A8C winkey: "0x28" binds key 0x28 to controller input RIGHT_THUMB_DOWN.
+i> 00001A8C winkey: "0x27" binds key 0x27 to controller input RIGHT_THUMB_RIGHT.
+i> 00001A8C winkey: "0x25" binds key 0x25 to controller input RIGHT_THUMB_LEFT.
+i> 00001A8C winkey: "K" binds key 0x4B to controller input RIGHT_THUMB_PRESSED.
+i> 00001A8C winkey: "L" binds key 0x4C to controller input X.
+i> 00001A8C winkey: "0xDE" binds key 0xDE to controller input B.
+i> 00001A8C winkey: "0xBA" binds key 0xBA to controller input A.
+i> 00001A8C winkey: "P" binds key 0x50 to controller input Y.
+i> 00001A8C winkey: "Q" binds key 0x51 to controller input LEFT_TRIGGER.
+i> 00001A8C winkey: "I" binds key 0x49 to controller input LEFT_TRIGGER.
+i> 00001A8C winkey: "E" binds key 0x45 to controller input RIGHT_TRIGGER.
+i> 00001A8C winkey: "O" binds key 0x4F to controller input RIGHT_TRIGGER.
+i> 00001A8C winkey: "Z" binds key 0x5A to controller input BACK.
+i> 00001A8C winkey: "X" binds key 0x58 to controller input START.
+i> 00001A8C winkey: "1" binds key 0x31 to controller input LEFT_SHOULDER.
+i> 00001A8C winkey: "3" binds key 0x33 to controller input RIGHT_SHOULDER.
+i> 00000B28 SDL Version 2.24.2 initialized.
+i> 00000B28 SDL OnControllerDeviceAdded: "(Harmonix Guitar for Xbox 360)", JoystickType(1), GameControllerType(1), VendorID(0x1BAD), ProductID(0x0002)
+i> 00000B28 SDL OnControllerDeviceAdded: Added at index 0.
+w> 00000B28 SDL GameControllerDB: file 'gamecontrollerdb.txt' does not exist.
+i> 00001A8C PatchDB: Loaded patches for 0 titles
+i> 00001A8C DXGI adapter: NVIDIA GeForce RTX 3060 (vendor 0x10DE, device 0x2504)
+i> 00001A8C Direct3D 12 device and OS features:
+* Max GPU virtual address bits per resource: 40
+* Non-zeroed heap creation: yes
+* Pixel-shader-specified stencil reference: no
+* Programmable sample positions: tier 2
+* Rasterizer-ordered views: yes
+* Resource binding: tier 3
+* Tiled resources: tier 3
+* Unaligned block-compressed textures: yes
+i> 00001A8C Added handle:01000004 for class xe::kernel::XObject
+i> 00001A8C XThread01000004 (1) Stack: 70010000-70030000
+i> 00001A8C Added handle:01000008 for class xe::kernel::XObject
+K> 01000004 XThread::Execute thid 1 (handle=01000004, 'GPU Commands (01000004)', native=00005184, <host>)
+i> 00001A8C XThread01000008 (2) Stack: 70050000-70070000
+K> 01000008 XThread::Execute thid 2 (handle=01000008, 'GPU VSync (01000008)', native=00002E4C, <host>)
+i> 00001A8C Added handle:0100000C for class xe::kernel::XObject
+i> 00001A8C XThread0100000C (3) Stack: 70090000-700B0000
+i> 00001A8C Added handle:01000010 for class xe::kernel::XObject
+i> 00001A8C XThread01000010 (4) Stack: 700D0000-700F0000
+i> 00001A8C Added handle:01000014 for class xe::kernel::XObject
+K> 0100000C XThread::Execute thid 3 (handle=0100000C, 'XMA Decoder (0100000C)', native=000011A4, <host>)
+K> 01000010 XThread::Execute thid 4 (handle=01000010, 'Audio Worker (01000010)', native=000018C4, <host>)
+i> 00001A8C Added handle:01000018 for class xe::kernel::XObject
+i> 00001A8C Added handle:0100001C for class xe::kernel::XObject
+i> 00001A8C Loading module game:\default.xex
+i> 00001A8C Added handle:F8000000 for class xe::kernel::XObject
+F> 00001A8C HostPathDevice::ResolvePath(\default.xex)
+C> 00001A8C WARNING: imported a variable with no value: ExThreadObjectType
+C> 00001A8C WARNING: imported a variable with no value: ExEventObjectType
+i> 00001A8C Module \Device\Harddisk0\Partition1\default.xex:
+Module Hash: F712B296D8A94B4E
+    Module Flags: 00000001
+Security Header:
+     Image Flags: 00000008
+    Load Address: 82000000
+      Image Size: 00890000
+    Export Table: 00000000
+Optional Header Count: 17
+  XEX_HEADER_RESOURCE_INFO:
+    575207F0 827D0000-8288EBF3, 781299b
+  XEX_HEADER_FILE_FORMAT_INFO (TODO):
+  XEX_HEADER_ENTRY_POINT: 826DAE00
+  XEX_HEADER_IMAGE_BASE_ADDRESS: 82000000
+  XEX_HEADER_IMPORT_LIBRARIES:
+    xam.xex - 182 imports
+      Version: 0.0.8498.32
+      Min Version: 0.0.8498.32
+    xboxkrnl.exe - 297 imports
+      Version: 0.0.8498.32
+      Min Version: 0.0.8498.32
+  XEX_HEADER_CHECKSUM_TIMESTAMP (TODO):
+  XEX_HEADER_ORIGINAL_PE_NAME: LEGORockBand.exe
+  XEX_HEADER_STATIC_LIBRARIES:
+    XAUD     : 2.0.8276.0
+    D3D9     : 2.0.8276.0
+    D3DX9    : 2.0.8276.0
+    XGRAPHC  : 2.0.8276.0
+    XONLINE  : 2.0.8276.0
+    XHV      : 2.0.8276.0
+    XMP      : 2.0.8276.0
+    XMIC     : 2.0.8276.0
+    LIBCMT   : 2.0.8276.0
+    XAPILIB  : 2.0.8276.0
+    XBOXKRNL : 2.0.8276.0
+  XEX_HEADER_TLS_INFO:
+          Slot Count: 64
+    Raw Data Address: 00000000
+           Data Size: 0
+       Raw Data Size: 0
+  XEX_HEADER_DEFAULT_STACK_SIZE: 262144
+  XEX_HEADER_SYSTEM_FLAGS: 00000200
+  XEX_HEADER_EXECUTION_INFO:
+       Media ID: 33C15E17
+       Title ID: 575207F0
+    Savegame ID: 575207F0
+    Disc Number / Total: 0 / 0
+  XEX_HEADER_TITLE_WORKSPACE_SIZE: 2621440
+  XEX_HEADER_GAME_RATINGS (TODO):
+  XEX_HEADER_LAN_KEY: 45 AD 35 A9 49 F3 C8 81 BD EA 5C AD 33 D0 61 9F
+  XEX_HEADER_XBOX360_LOGO (TODO):
+  XEX_HEADER_ALTERNATE_TITLE_IDS (TODO):
+Sections:
+    0 RODATA    1 pages    82000000 - 82010000 (65536 bytes)
+    1 RODATA    1 pages    82010000 - 82020000 (65536 bytes)
+    2 RODATA    1 pages    82020000 - 82030000 (65536 bytes)
+    3 RODATA    1 pages    82030000 - 82040000 (65536 bytes)
+    4 RODATA    1 pages    82040000 - 82050000 (65536 bytes)
+    5 RODATA    1 pages    82050000 - 82060000 (65536 bytes)
+    6 RODATA    1 pages    82060000 - 82070000 (65536 bytes)
+    7 RODATA    1 pages    82070000 - 82080000 (65536 bytes)
+    8 RODATA    1 pages    82080000 - 82090000 (65536 bytes)
+    9 RODATA    1 pages    82090000 - 820A0000 (65536 bytes)
+   10 RODATA    1 pages    820A0000 - 820B0000 (65536 bytes)
+   11 RODATA    1 pages    820B0000 - 820C0000 (65536 bytes)
+   12 RODATA    1 pages    820C0000 - 820D0000 (65536 bytes)
+   13 RODATA    1 pages    820D0000 - 820E0000 (65536 bytes)
+   14 CODE      1 pages    820E0000 - 820F0000 (65536 bytes)
+   15 CODE      1 pages    820F0000 - 82100000 (65536 bytes)
+   16 CODE      1 pages    82100000 - 82110000 (65536 bytes)
+   17 CODE      1 pages    82110000 - 82120000 (65536 bytes)
+   18 CODE      1 pages    82120000 - 82130000 (65536 bytes)
+   19 CODE      1 pages    82130000 - 82140000 (65536 bytes)
+   20 CODE      1 pages    82140000 - 82150000 (65536 bytes)
+   21 CODE      1 pages    82150000 - 82160000 (65536 bytes)
+   22 CODE      1 pages    82160000 - 82170000 (65536 bytes)
+   23 CODE      1 pages    82170000 - 82180000 (65536 bytes)
+   24 CODE      1 pages    82180000 - 82190000 (65536 bytes)
+   25 CODE      1 pages    82190000 - 821A0000 (65536 bytes)
+   26 CODE      1 pages    821A0000 - 821B0000 (65536 bytes)
+   27 CODE      1 pages    821B0000 - 821C0000 (65536 bytes)
+   28 CODE      1 pages    821C0000 - 821D0000 (65536 bytes)
+   29 CODE      1 pages    821D0000 - 821E0000 (65536 bytes)
+   30 CODE      1 pages    821E0000 - 821F0000 (65536 bytes)
+   31 CODE      1 pages    821F0000 - 82200000 (65536 bytes)
+   32 CODE      1 pages    82200000 - 82210000 (65536 bytes)
+   33 CODE      1 pages    82210000 - 82220000 (65536 bytes)
+   34 CODE      1 pages    82220000 - 82230000 (65536 bytes)
+   35 CODE      1 pages    82230000 - 82240000 (65536 bytes)
+   36 CODE      1 pages    82240000 - 82250000 (65536 bytes)
+   37 CODE      1 pages    82250000 - 82260000 (65536 bytes)
+   38 CODE      1 pages    82260000 - 82270000 (65536 bytes)
+   39 CODE      1 pages    82270000 - 82280000 (65536 bytes)
+   40 CODE      1 pages    82280000 - 82290000 (65536 bytes)
+   41 CODE      1 pages    82290000 - 822A0000 (65536 bytes)
+   42 CODE      1 pages    822A0000 - 822B0000 (65536 bytes)
+   43 CODE      1 pages    822B0000 - 822C0000 (65536 bytes)
+   44 CODE      1 pages    822C0000 - 822D0000 (65536 bytes)
+   45 CODE      1 pages    822D0000 - 822E0000 (65536 bytes)
+   46 CODE      1 pages    822E0000 - 822F0000 (65536 bytes)
+   47 CODE      1 pages    822F0000 - 82300000 (65536 bytes)
+   48 CODE      1 pages    82300000 - 82310000 (65536 bytes)
+   49 CODE      1 pages    82310000 - 82320000 (65536 bytes)
+   50 CODE      1 pages    82320000 - 82330000 (65536 bytes)
+   51 CODE      1 pages    82330000 - 82340000 (65536 bytes)
+   52 CODE      1 pages    82340000 - 82350000 (65536 bytes)
+   53 CODE      1 pages    82350000 - 82360000 (65536 bytes)
+   54 CODE      1 pages    82360000 - 82370000 (65536 bytes)
+   55 CODE      1 pages    82370000 - 82380000 (65536 bytes)
+   56 CODE      1 pages    82380000 - 82390000 (65536 bytes)
+   57 CODE      1 pages    82390000 - 823A0000 (65536 bytes)
+   58 CODE      1 pages    823A0000 - 823B0000 (65536 bytes)
+   59 CODE      1 pages    823B0000 - 823C0000 (65536 bytes)
+   60 CODE      1 pages    823C0000 - 823D0000 (65536 bytes)
+   61 CODE      1 pages    823D0000 - 823E0000 (65536 bytes)
+   62 CODE      1 pages    823E0000 - 823F0000 (65536 bytes)
+   63 CODE      1 pages    823F0000 - 82400000 (65536 bytes)
+   64 CODE      1 pages    82400000 - 82410000 (65536 bytes)
+   65 CODE      1 pages    82410000 - 82420000 (65536 bytes)
+   66 CODE      1 pages    82420000 - 82430000 (65536 bytes)
+   67 CODE      1 pages    82430000 - 82440000 (65536 bytes)
+   68 CODE      1 pages    82440000 - 82450000 (65536 bytes)
+   69 CODE      1 pages    82450000 - 82460000 (65536 bytes)
+   70 CODE      1 pages    82460000 - 82470000 (65536 bytes)
+   71 CODE      1 pages    82470000 - 82480000 (65536 bytes)
+   72 CODE      1 pages    82480000 - 82490000 (65536 bytes)
+   73 CODE      1 pages    82490000 - 824A0000 (65536 bytes)
+   74 CODE      1 pages    824A0000 - 824B0000 (65536 bytes)
+   75 CODE      1 pages    824B0000 - 824C0000 (65536 bytes)
+   76 CODE      1 pages    824C0000 - 824D0000 (65536 bytes)
+   77 CODE      1 pages    824D0000 - 824E0000 (65536 bytes)
+   78 CODE      1 pages    824E0000 - 824F0000 (65536 bytes)
+   79 CODE      1 pages    824F0000 - 82500000 (65536 bytes)
+   80 CODE      1 pages    82500000 - 82510000 (65536 bytes)
+   81 CODE      1 pages    82510000 - 82520000 (65536 bytes)
+   82 CODE      1 pages    82520000 - 82530000 (65536 bytes)
+   83 CODE      1 pages    82530000 - 82540000 (65536 bytes)
+   84 CODE      1 pages    82540000 - 82550000 (65536 bytes)
+   85 CODE      1 pages    82550000 - 82560000 (65536 bytes)
+   86 CODE      1 pages    82560000 - 82570000 (65536 bytes)
+   87 CODE      1 pages    82570000 - 82580000 (65536 bytes)
+   88 CODE      1 pages    82580000 - 82590000 (65536 bytes)
+   89 CODE      1 pages    82590000 - 825A0000 (65536 bytes)
+   90 CODE      1 pages    825A0000 - 825B0000 (65536 bytes)
+   91 CODE      1 pages    825B0000 - 825C0000 (65536 bytes)
+   92 CODE      1 pages    825C0000 - 825D0000 (65536 bytes)
+   93 CODE      1 pages    825D0000 - 825E0000 (65536 bytes)
+   94 CODE      1 pages    825E0000 - 825F0000 (65536 bytes)
+   95 CODE      1 pages    825F0000 - 82600000 (65536 bytes)
+   96 CODE      1 pages    82600000 - 82610000 (65536 bytes)
+   97 CODE      1 pages    82610000 - 82620000 (65536 bytes)
+   98 CODE      1 pages    82620000 - 82630000 (65536 bytes)
+   99 CODE      1 pages    82630000 - 82640000 (65536 bytes)
+  100 CODE      1 pages    82640000 - 82650000 (65536 bytes)
+  101 CODE      1 pages    82650000 - 82660000 (65536 bytes)
+  102 CODE      1 pages    82660000 - 82670000 (65536 bytes)
+  103 CODE      1 pages    82670000 - 82680000 (65536 bytes)
+  104 CODE      1 pages    82680000 - 82690000 (65536 bytes)
+  105 CODE      1 pages    82690000 - 826A0000 (65536 bytes)
+  106 CODE      1 pages    826A0000 - 826B0000 (65536 bytes)
+  107 CODE      1 pages    826B0000 - 826C0000 (65536 bytes)
+  108 CODE      1 pages    826C0000 - 826D0000 (65536 bytes)
+  109 CODE      1 pages    826D0000 - 826E0000 (65536 bytes)
+  110 CODE      1 pages    826E0000 - 826F0000 (65536 bytes)
+  111 CODE      1 pages    826F0000 - 82700000 (65536 bytes)
+  112 CODE      1 pages    82700000 - 82710000 (65536 bytes)
+  113 CODE      1 pages    82710000 - 82720000 (65536 bytes)
+  114 CODE      1 pages    82720000 - 82730000 (65536 bytes)
+  115 CODE      1 pages    82730000 - 82740000 (65536 bytes)
+  116 CODE      1 pages    82740000 - 82750000 (65536 bytes)
+  117 RWDATA    1 pages    82750000 - 82760000 (65536 bytes)
+  118 RWDATA    1 pages    82760000 - 82770000 (65536 bytes)
+  119 RWDATA    1 pages    82770000 - 82780000 (65536 bytes)
+  120 RWDATA    1 pages    82780000 - 82790000 (65536 bytes)
+  121 RWDATA    1 pages    82790000 - 827A0000 (65536 bytes)
+  122 RWDATA    1 pages    827A0000 - 827B0000 (65536 bytes)
+  123 RWDATA    1 pages    827B0000 - 827C0000 (65536 bytes)
+  124 RWDATA    1 pages    827C0000 - 827D0000 (65536 bytes)
+  125 RODATA    1 pages    827D0000 - 827E0000 (65536 bytes)
+  126 RODATA    1 pages    827E0000 - 827F0000 (65536 bytes)
+  127 RODATA    1 pages    827F0000 - 82800000 (65536 bytes)
+  128 RODATA    1 pages    82800000 - 82810000 (65536 bytes)
+  129 RODATA    1 pages    82810000 - 82820000 (65536 bytes)
+  130 RODATA    1 pages    82820000 - 82830000 (65536 bytes)
+  131 RODATA    1 pages    82830000 - 82840000 (65536 bytes)
+  132 RODATA    1 pages    82840000 - 82850000 (65536 bytes)
+  133 RODATA    1 pages    82850000 - 82860000 (65536 bytes)
+  134 RODATA    1 pages    82860000 - 82870000 (65536 bytes)
+  135 RODATA    1 pages    82870000 - 82880000 (65536 bytes)
+  136 RODATA    1 pages    82880000 - 82890000 (65536 bytes)
+Imports:
+ xam - 91 imports
+   Version: 0.0.8498.32
+   Min Version: 0.0.8498.32
+
+         Total:   91
+         Known:  100% (91 known, 0 unknown)
+   Implemented:   85% (78 implemented, 13 unimplemented)
+
+   F 82000400 8273C27C 3CC ( 972)    XGetGameRegion
+   F 82000404 8273C28C 28C ( 652)    XNotifyPositionUI
+   F 82000408 8273C29C 28B ( 651)    XNotifyGetNext
+   F 8200040C 8273C2AC 1B9 ( 441) !! XamInputSendStayAliveRequest
+   F 82000410 8273C2BC 3D1 ( 977)    XGetVideoMode
+   F 82000414 8273C2CC 1EA ( 490)    XamAlloc
+   F 82000418 8273C2DC 24F ( 591)    XamGetPrivateEnumStructureFromHandle
+   F 8200041C 8273C2EC 24E ( 590)    XamCreateEnumeratorHandle
+   F 82000420 8273C2FC 20A ( 522)    XamUserGetXUID
+   F 82000424 8273C30C 217 ( 535) !! XamUserGetMembershipTierFromXUID
+   F 82000428 8273C31C 3CD ( 973)    XGetLanguage
+   F 8200042C 8273C32C 218 ( 536) !! XamUserGetOnlineCountryFromXUID
+   F 82000430 8273C33C 136 ( 310) !! XNetLogonGetTitleID
+   F 82000434 8273C34C 1F4 ( 500)    XMsgInProcessCall
+   F 82000438 8273C35C 1EC ( 492)    XamFree
+   F 8200043C 8273C36C 033 (  51)    NetDll_XNetStartup
+   F 82000440 8273C37C 282 ( 642)    XamGetSystemVersion
+   F 82000444 8273C38C 035 (  53)    NetDll_XNetRandom
+   F 82000448 8273C39C 03A (  58) !! NetDll_XNetServerToInAddr
+   F 8200044C 8273C3AC 03E (  62)    NetDll_XNetInAddrToString
+   F 82000450 8273C3BC 03F (  63) !! NetDll_XNetUnregisterInAddr
+   F 82000454 8273C3CC 041 (  65) !! NetDll_XNetConnect
+   F 82000458 8273C3DC 042 (  66) !! NetDll_XNetGetConnectStatus
+   F 8200045C 8273C3EC 043 (  67)    NetDll_XNetDnsLookup
+   F 82000460 8273C3FC 044 (  68)    NetDll_XNetDnsRelease
+   F 82000464 8273C40C 04B (  75)    NetDll_XNetGetEthernetLinkStatus
+   F 82000468 8273C41C 1F7 ( 503)    XMsgStartIORequest
+   F 8200046C 8273C42C 001 (   1)    NetDll_WSAStartup
+   F 82000470 8273C43C 002 (   2)    NetDll_WSACleanup
+   F 82000474 8273C44C 003 (   3)    NetDll_socket
+   F 82000478 8273C45C 004 (   4)    NetDll_closesocket
+   F 8200047C 8273C46C 005 (   5)    NetDll_shutdown
+   F 82000480 8273C47C 006 (   6)    NetDll_ioctlsocket
+   F 82000484 8273C48C 007 (   7)    NetDll_setsockopt
+   F 82000488 8273C49C 009 (   9)    NetDll_getsockname
+   F 8200048C 8273C4AC 00A (  10) !! NetDll_getpeername
+   F 82000490 8273C4BC 00B (  11)    NetDll_bind
+   F 82000494 8273C4CC 00C (  12)    NetDll_connect
+   F 82000498 8273C4DC 00D (  13)    NetDll_listen
+   F 8200049C 8273C4EC 00E (  14)    NetDll_accept
+   F 820004A0 8273C4FC 00F (  15)    NetDll_select
+   F 820004A4 8273C50C 012 (  18)    NetDll_recv
+   F 820004A8 8273C51C 014 (  20)    NetDll_recvfrom
+   F 820004AC 8273C52C 016 (  22)    NetDll_send
+   F 820004B0 8273C53C 018 (  24)    NetDll_sendto
+   F 820004B4 8273C54C 01A (  26)    NetDll_inet_addr
+   F 820004B8 8273C55C 01B (  27)    NetDll_WSAGetLastError
+   F 820004BC 8273C56C 01D (  29)    NetDll_WSACreateEvent
+   F 820004C0 8273C57C 28A ( 650)    XamNotifyCreateListener
+   F 820004C4 8273C58C 212 ( 530)    XamUserCheckPrivilege
+   F 820004C8 8273C59C 219 ( 537)    XamUserReadProfileSettings
+   F 820004CC 8273C5AC 210 ( 528)    XamUserGetSigninState
+   F 820004D0 8273C5BC 30D ( 781)    XamVoiceHeadsetPresent
+   F 820004D4 8273C5CC 30F ( 783)    XamVoiceClose
+   F 820004D8 8273C5DC 1F8 ( 504)    XMsgCancelIORequest
+   F 820004DC 8273C5EC 30E ( 782) !! XamVoiceSubmitPacket
+   F 820004E0 8273C5FC 30C ( 780)    XamVoiceCreate
+   F 820004E4 8273C60C 213 ( 531)    XamUserAreUsersFriends
+   F 820004E8 8273C61C 1FC ( 508)    XMsgStartIORequestEx
+   F 820004EC 8273C62C 208 ( 520)    XamUserGetDeviceContext
+   F 820004F0 8273C63C 2DC ( 732)    XamShowMessageBoxUIEx
+   F 820004F4 8273C64C 3CB ( 971)    XGetAVPack
+   F 820004F8 8273C65C 1A9 ( 425)    XamLoaderTerminateTitle
+   F 820004FC 8273C66C 20E ( 526)    XamUserGetName
+   F 82000500 8273C67C 2EE ( 750)    XamUserCreateAchievementEnumerator
+   F 82000504 8273C68C 2BC ( 700)    XamShowSigninUI
+   F 82000508 8273C69C 2BF ( 703) !! XamShowFriendsUI
+   F 8200050C 8273C6AC 2C1 ( 705)    XamShowKeyboardUI
+   F 82000510 8273C6BC 2D5 ( 725) !! XamShowGamerCardUIForXUID
+   F 82000514 8273C6CC 2C7 ( 711) !! XamShowMarketplaceUI
+   F 82000518 8273C6DC 2CB ( 715)    XamShowDeviceSelectorUI
+   F 8200051C 8273C6EC 2D9 ( 729)    XamShowDirtyDiscErrorUI
+   F 82000520 8273C6FC 250 ( 592)    XamEnumerate
+   F 82000524 8273C70C 1A4 ( 420)    XamLoaderLaunchTitle
+   F 82000528 8273C71C 227 ( 551)    XamUserGetSigninInfo
+   F 8200052C 8273C72C 1A0 ( 416)    XamEnableInactivityProcessing
+   F 82000530 8273C73C 1A1 ( 417)    XamResetInactivity
+   F 82000534 8273C74C 259 ( 601)    XamContentCreateEx
+   F 82000538 8273C75C 25B ( 603)    XamContentDelete
+   F 8200053C 8273C76C 25A ( 602)    XamContentClose
+   F 82000540 8273C77C 262 ( 610)    XamContentGetCreator
+   F 82000544 8273C78C 25C ( 604)    XamContentCreateEnumerator
+   F 82000548 8273C79C 265 ( 613)    XamContentGetDeviceState
+   F 8200054C 8273C7AC 25E ( 606)    XamContentGetDeviceData
+   F 82000550 8273C7BC 280 ( 640)    XamGetExecutionId
+   F 82000554 8273C7CC 1FB ( 507)    XamGetOverlappedResult
+   F 82000558 8273C7DC 1AF ( 431)    XamTaskSchedule
+   F 8200055C 8273C7EC 1F5 ( 501)    XMsgCompleteIORequest
+   F 82000560 8273C7FC 190 ( 400)    XamInputGetCapabilities
+   F 82000564 8273C80C 191 ( 401)    XamInputGetState
+   F 82000568 8273C81C 192 ( 402)    XamInputSetState
+
+ xboxkrnl - 155 imports
+   Version: 0.0.8498.32
+   Min Version: 0.0.8498.32
+
+         Total:  155
+         Known:  100% (155 known, 0 unknown)
+   Implemented:   95% (148 implemented, 7 unimplemented)
+
+   F 82000570 8273C82C 12E ( 302)    RtlInitializeCriticalSection
+   F 82000574 8273C83C 125 ( 293)    RtlEnterCriticalSection
+   F 82000578 8273C84C 130 ( 304)    RtlLeaveCriticalSection
+   F 8200057C 8273C85C 141 ( 321)    RtlTryEnterCriticalSection
+   F 82000580 8273C86C 276 ( 630) !! XAudioOverrideSpeakerConfig
+   F 82000584 8273C87C 1FF ( 511)    XAudioGetSpeakerConfig
+   F 82000588 8273C88C 04D (  77)    KeAcquireSpinLockAtRaisedIrql
+   F 8200058C 8273C89C 085 ( 133)    KeRaiseIrqlToDpcLevel
+   F 82000590 8273C8AC 0B3 ( 179)    KfLowerIrql
+   F 82000594 8273C8BC 0AE ( 174)    KeTryToAcquireSpinLockAtRaisedIrql
+   F 82000598 8273C8CC 089 ( 137)    KeReleaseSpinLockFromRaisedIrql
+   F 8200059C 8273C8DC 1F3 ( 499)    XAudioRegisterRenderDriverClient
+   F 820005A0 8273C8EC 1F4 ( 500)    XAudioUnregisterRenderDriverClient
+   F 820005A4 8273C8FC 1F5 ( 501)    XAudioSubmitRenderDriverFrame
+   F 820005A8 8273C90C 0BE ( 190)    MmGetPhysicalAddress
+   F 820005AC 8273C91C 226 ( 550)    XMAReleaseContext
+   F 820005B0 8273C92C 224 ( 548)    XMACreateContext
+   F 820005B4 8273C93C 083 ( 131)    KeQueryPerformanceFrequency
+   F 820005B8 8273C94C 066 ( 102)    KeGetCurrentProcessType
+   F 820005BC 8273C95C 015 (  21)    ExRegisterTitleTerminateNotification
+   F 820005C0 8273C96C 09D ( 157)    KeSetEvent
+   F 820005C4 8273C97C 088 ( 136)    KeReleaseSemaphore
+   F 820005C8 8273C98C 1F8 ( 504)    XAudioGetVoiceCategoryVolume
+   F 820005CC 8273C99C 1F7 ( 503)    XAudioGetVoiceCategoryVolumeChangeMask
+   F 820005D0 8273C9AC 0B0 ( 176)    KeWaitForSingleObject
+   F 820005D4 8273C9BC 0AF ( 175)    KeWaitForMultipleObjects
+   F 820005D8 8273C9CC 105 ( 261)    ObDereferenceObject
+   F 820005DC 8273C9DC 092 ( 146)    KeResumeThread
+   F 820005E0 8273C9EC 099 ( 153)    KeSetBasePriorityThread
+   F 820005E4 8273C9FC 110 ( 272)    ObReferenceObjectByHandle
+   F 820005E8 8273CA0C 00D (  13)    ExCreateThread
+   V 820005EC          01B (  27) !! ExThreadObjectType
+   F 820005F0 8273CA1C 074 ( 116)    KeInitializeSemaphore
+   V 820005F4          1BE ( 446)    VdGlobalDevice
+   V 820005F8          1BF ( 447)    VdGlobalXamDevice
+   F 820005FC 8273CA2C 1B4 ( 436)    VdEnableDisableClockGating
+   V 82000600          266 ( 614)    KeCertMonitorData
+   F 82000604 8273CA3C 0B4 ( 180)    KfReleaseSpinLock
+   F 82000608 8273CA4C 0B1 ( 177)    KfAcquireSpinLock
+   F 8200060C 8273CA5C 0BD ( 189)    MmFreePhysicalMemory
+   F 82000610 8273CA6C 1C7 ( 455)    VdPersistDisplay
+   F 82000614 8273CA7C 25B ( 603)    VdSwap
+   F 82000618 8273CA8C 1BD ( 445)    VdGetSystemCommandBuffer
+   F 8200061C 8273CA9C 13B ( 315)    sprintf
+   F 82000620 8273CAAC 0C4 ( 196)    MmQueryAddressProtect
+   F 82000624 8273CABC 1DF ( 479)    KiApcNormalRoutineNop
+   F 82000628 8273CACC 1B6 ( 438)    VdEnableRingBufferRPtrWriteBack
+   F 8200062C 8273CADC 1C3 ( 451)    VdInitializeRingBuffer
+   F 82000630 8273CAEC 1D9 ( 473)    VdSetSystemCommandBufferGpuIdentifierAddress
+   F 82000634 8273CAFC 06B ( 107)    KeLockL2
+   F 82000638 8273CB0C 06C ( 108)    KeUnlockL2
+   F 8200063C 8273CB1C 08F ( 143)    KeResetEvent
+   F 82000640 8273CB2C 003 (   3)    DbgPrint
+   F 82000644 8273CB3C 14D ( 333)    _vsnprintf
+   V 82000648          158 ( 344)    XboxKrnlVersion
+   F 8200064C 8273CB4C 1DC ( 476)    VdShutdownEngines
+   V 82000650          059 (  89)    KeDebugMonitorData
+   F 82000654 8273CB5C 010 (  16)    ExGetXConfigSetting
+   F 82000658 8273CB6C 1CA ( 458)    VdQueryVideoMode
+   F 8200065C 8273CB7C 1BA ( 442)    VdGetCurrentDisplayInformation
+   F 82000660 8273CB8C 1D3 ( 467)    VdSetDisplayMode
+   F 82000664 8273CB9C 1D5 ( 469)    VdSetGraphicsInterruptCallback
+   F 82000668 8273CBAC 1C2 ( 450)    VdInitializeEngines
+   F 8200066C 8273CBBC 1C6 ( 454)    VdIsHSIOTrainingSucceeded
+   F 82000670 8273CBCC 1B9 ( 441)    VdGetCurrentDisplayGamma
+   F 82000674 8273CBDC 052 (  82)    KeBugCheck
+   F 82000678 8273CBEC 1C9 ( 457)    VdQueryVideoFlags
+   F 8200067C 8273CBFC 1B1 ( 433)    VdCallGraphicsNotificationRoutines
+   V 82000680          1C0 ( 448)    VdGpuClockInMHz
+   F 82000684 8273CC0C 1C5 ( 453)    VdInitializeScalerCommandBuffer
+   F 82000688 8273CC1C 126 ( 294)    RtlFillMemoryUlong
+   F 8200068C 8273CC2C 07D ( 125)    KeLeaveCriticalRegion
+   F 82000690 8273CC3C 269 ( 617)    VdRetrainEDRAM
+   F 82000694 8273CC4C 26A ( 618)    VdRetrainEDRAMWorker
+   V 82000698          1C1 ( 449)    VdHSIOCalibrationLock
+   F 8200069C 8273CC5C 05F (  95)    KeEnterCriticalRegion
+   F 820006A0 8273CC6C 0BA ( 186)    MmAllocatePhysicalMemoryEx
+   F 820006A4 8273CC7C 104 ( 260)    ObDeleteSymbolicLink
+   F 820006A8 8273CC8C 103 ( 259)    ObCreateSymbolicLink
+   F 820006AC 8273CC9C 12C ( 300)    RtlInitAnsiString
+   F 820006B0 8273CCAC 1A5 ( 421) !! __C_specific_handler
+   F 820006B4 8273CCBC 154 ( 340)    KeTlsGetValue
+   F 820006B8 8273CCCC 155 ( 341)    KeTlsSetValue
+   F 820006BC 8273CCDC 152 ( 338)    KeTlsAlloc
+   F 820006C0 8273CCEC 153 ( 339)    KeTlsFree
+   F 820006C4 8273CCFC 197 ( 407)    XexGetProcedureAddress
+   F 820006C8 8273CD0C 195 ( 405)    XexGetModuleHandle
+   F 820006CC 8273CD1C 194 ( 404)    XexCheckExecutablePrivilege
+   F 820006D0 8273CD2C 135 ( 309)    RtlNtStatusToDosError
+   F 820006D4 8273CD3C 2E1 ( 737) !! RmcDeviceRequest
+   F 820006D8 8273CD4C 2B1 ( 689) !! MicDeviceRequest
+   F 820006DC 8273CD5C 00F (  15)    ExFreePool
+   V 820006E0          00E (  14) !! ExEventObjectType
+   F 820006E4 8273CD6C 06D ( 109)    KeInitializeApc
+   F 820006E8 8273CD7C 10F ( 271)    ObReferenceObject
+   F 820006EC 8273CD8C 00A (  10)    ExAllocatePoolWithTag
+   F 820006F0 8273CD9C 07A ( 122)    KeInsertQueueApc
+   F 820006F4 8273CDAC 05D (  93)    KeEnableFpuExceptions
+   F 820006F8 8273CDBC 147 ( 327) !! RtlUnwind
+   F 820006FC 8273CDCC 12F ( 303)    RtlInitializeCriticalSectionAndSpinCount
+   F 82000700 8273CDDC 0CF ( 207)    NtClose
+   F 82000704 8273CDEC 0D1 ( 209)    NtCreateEvent
+   F 82000708 8273CDFC 10E ( 270)    ObOpenObjectByPointer
+   F 8200070C 8273CE0C 10B ( 267)    ObLookupThreadByThreadId
+   F 82000710 8273CE1C 097 ( 151)    KeSetAffinityThread
+   F 82000714 8273CE2C 18F ( 399)    XeCryptShaInit
+   F 82000718 8273CE3C 190 ( 400)    XeCryptShaUpdate
+   F 8200071C 8273CE4C 191 ( 401)    XeCryptShaFinal
+   F 82000720 8273CE5C 0F6 ( 246)    NtSetEvent
+   F 82000724 8273CE6C 0F5 ( 245)    NtResumeThread
+   F 82000728 8273CE7C 133 ( 307)    RtlMultiByteToUnicodeN
+   F 8200072C 8273CE8C 140 ( 320)    RtlTimeToTimeFields
+   F 82000730 8273CE9C 084 ( 132)    KeQuerySystemTime
+   V 82000734          1AE ( 430)    ExLoadedCommandLine
+   F 82000738 8273CEAC 0C5 ( 197)    MmQueryAllocationSize
+   F 8200073C 8273CEBC 0DF ( 223)    NtOpenFile
+   F 82000740 8273CECC 0D2 ( 210)    NtCreateFile
+   F 82000744 8273CEDC 12B ( 299)    RtlImageXexHeaderField
+   V 82000748          193 ( 403)    XexExecutableModuleHandle
+   F 8200074C 8273CEEC 0CE ( 206)    NtClearEvent
+   F 82000750 8273CEFC 13F ( 319)    RtlTimeFieldsToTime
+   F 82000754 8273CF0C 0F7 ( 247)    NtSetInformationFile
+   F 82000758 8273CF1C 0FD ( 253)    NtWaitForSingleObjectEx
+   F 8200075C 8273CF2C 0FF ( 255)    NtWriteFile
+   F 82000760 8273CF3C 0D5 ( 213)    NtCreateSemaphore
+   F 82000764 8273CF4C 0F3 ( 243)    NtReleaseSemaphore
+   F 82000768 8273CF5C 0FE ( 254)    NtWaitForMultipleObjectsEx
+   F 8200076C 8273CF6C 159 ( 345)    XeCryptAesKey
+   F 82000770 8273CF7C 15B ( 347)    XeCryptAesCbc
+   F 82000774 8273CF8C 0EF ( 239)    NtQueryVolumeInformationFile
+   F 82000778 8273CF9C 0F2 ( 242)    NtReleaseMutant
+   F 8200077C 8273CFAC 0D4 ( 212)    NtCreateMutant
+   V 82000780          0AD ( 173)    KeTimeStampBundle
+   F 82000784 8273CFBC 0E8 ( 232)    NtQueryInformationFile
+   F 82000788 8273CFCC 143 ( 323)    RtlUnicodeToMultiByteN
+   F 8200078C 8273CFDC 0E7 ( 231)    NtQueryFullAttributesFile
+   F 82000790 8273CFEC 0CC ( 204)    NtAllocateVirtualMemory
+   F 82000794 8273CFFC 053 (  83)    KeBugCheckEx
+   F 82000798 8273D00C 0DC ( 220)    NtFreeVirtualMemory
+   F 8200079C 8273D01C 11B ( 283)    RtlCompareMemoryUlong
+   F 820007A0 8273D02C 0EE ( 238)    NtQueryVirtualMemory
+   F 820007A4 8273D03C 136 ( 310)    RtlRaiseException
+   F 820007A8 8273D04C 001 (   1)    DbgBreakPoint
+   F 820007AC 8273D05C 0CD ( 205)    NtCancelTimer
+   F 820007B0 8273D06C 0FA ( 250)    NtSetTimerEx
+   F 820007B4 8273D07C 019 (  25)    ExTerminateThread
+   F 820007B8 8273D08C 0D7 ( 215)    NtCreateTimer
+   F 820007BC 8273D09C 0DA ( 218)    NtDuplicateObject
+   F 820007C0 8273D0AC 0DB ( 219)    NtFlushBuffersFile
+   F 820007C4 8273D0BC 028 (  40)    HalReturnToFirmware
+   F 820007C8 8273D0CC 0E4 ( 228)    NtQueryDirectoryFile
+   F 820007CC 8273D0DC 0F1 ( 241)    NtReadFileScatter
+   F 820007D0 8273D0EC 0F0 ( 240)    NtReadFile
+   F 820007D4 8273D0FC 05A (  90)    KeDelayExecutionThread
+   V 820007D8          156 ( 342)    XboxHardwareInfo
+
+i> 00001A8C Title name: LEGO Rock Band
+i> 00001A8C -------------------- ACHIEVEMENTS --------------------
+i> 00001A8C 13 - New to the Scene - First gig on the World Tour completed - 10
+i> 00001A8C 14 - Tour de Force - Played at every venue on the World Tour - 20
+i> 00001A8C 15 - Veteran Performer - All gigs on the World Tour completed (except for the Rock Marathon Setlist and Endless Setlist) - 50
+i> 00001A8C 16 - Long-Distance Rocker - Rock Marathon Setlist completed - 30
+i> 00001A8C 17 - Endless Shameless - Endless Setlist completed - 50
+i> 00001A8C 18 - Got Wheels - Minibus purchased - 10
+i> 00001A8C 19 - Sea Legs - Speedboat purchased - 10
+i> 00001A8C 20 - Rotary Club - Chopper purchased - 10
+i> 00001A8C 21 - Open Road - Tourbus purchased - 10
+i> 00001A8C 22 - Walking on Air - Hovercraft purchased - 10
+i> 00001A8C 23 - Into the Deep - Submarine purchased - 10
+i> 00001A8C 24 - Jet Setter - Private Jet purchased - 10
+i> 00001A8C 25 - Teleportation Nation - Teleporter unlocked - 10
+i> 00001A8C 26 - Rock the House Down - Wreck 'n' Roll completed - 10
+i> 00001A8C 27 - The School of Shock - Shock Band completed - 10
+i> 00001A8C 28 - Kickin' the Tentacles - Rocktopus completed - 10
+i> 00001A8C 30 - Rain King - Rock the Crop completed - 10
+i> 00001A8C 31 - No More Mr Ice Guy - Rock the Boat completed - 10
+i> 00001A8C 32 - Dooyafinkhesaurus - Securi-T-Rex completed - 10
+i> 00001A8C 33 - Royal Command Performance - Kings of Rock 'n' Troll completed - 10
+i> 00001A8C 34 - Start Me Up - Rock-It Fuel completed - 10
+i> 00001A8C 35 - Armageddon Outta Here - Stop the Rock completed - 10
+i> 00001A8C 36 - Roadie Revolution - Road Crew hired - 10
+i> 00001A8C 37 - Pencil Pusher - Band Manager hired - 10
+i> 00001A8C 38 - You're Hired! - Entourage member hired - 10
+i> 00001A8C 39 - #1 Boss - All Entourage members hired - 40
+i> 00001A8C 40 - Hovel, Sweet Hovel - One item of rock den furniture purchased - 10
+i> 00001A8C 41 - House Proud
+ - 100,000 studs spent on rock den furniture - 20
+i> 00001A8C 42 - Luxury Living - 1,000,000 studs spent on rock den furniture - 40
+i> 00001A8C 43 - Bare Essentials - Item of clothing purchased - 10
+i> 00001A8C 44 - Appetite For Apparel - 100,000 studs spent on items of clothing - 20
+i> 00001A8C 45 - Fashion Victim - 1,000,000 studs spent on items of clothing - 40
+i> 00001A8C 46 - Gear Head - Instrument purchased - 10
+i> 00001A8C 47 - Instrumental - 1,000,000 studs spent on instruments - 40
+i> 00001A8C 48 - Local Legend - 100 fans achieved - 10
+i> 00001A8C 49 - Fan-TASTIC - 1,000,000 fans achieved - 30
+i> 00001A8C 50 - Twinkle, Twinkle - 100 Stars achieved - 10
+i> 00001A8C 51 - Super Stars - 1000 Stars achieved - 30
+i> 00001A8C 52 - Universal Acclaim - Story completed - 50
+i> 00001A8C 53 - Flawless Fretwork - 100% notes hit as a Guitarist during a performance - 20
+i> 00001A8C 54 - Flawless Drumming - 100% notes hit as a Drummer during a performance - 20
+i> 00001A8C 55 - Flawless Singing - 100% rating as a Vocalist achieved during a performance - 20
+i> 00001A8C 57 - Flawless Groove - 100% notes hit as a Bassist during a performance - 20
+i> 00001A8C 58 - Stud Farm - 100% Stud Recovery achieved during a performance - 20
+i> 00001A8C 59 - Brian MAY Be Jealous - Achieved 100% Guitar Solo on Expert - 20
+i> 00001A8C 60 - The Final Countdown - 100% scored on the Guitar Solo in  "The Final Countdown" on Expert - 40
+i> 00001A8C 61 - All Four One! - Song completed with four band members - 20
+i> 00001A8C 62 - Practice Makes Perfect - All four band members scored 100% notes hit - 50
+i> 00001A8C 63 - Solid Gold, Easy Action! - One song Gold Starred - 50
+i> 00001A8C ----------------- END OF ACHIEVEMENTS ----------------
+i> 00001A8C Added handle:01000020 for class xe::kernel::XObject
+i> 00001A8C XThread01000020 (5) Stack: 70110000-70130000
+i> 00001A8C KernelState: Launching module...
+i> 00001A8C Added handle:F8000004 for class xe::kernel::XObject
+K> 01000020 XThread::Execute thid 5 (handle=01000020, 'Kernel Dispatch (01000020)', native=00002488, <host>)
+i> 00001A8C XThreadF8000004 (6) Stack: 70150000-70190000
+K> F8000004 XThread::Execute thid 6 (handle=F8000004, 'Main XThread (F8000004)', native=00005248)
+i> F8000004 Added handle:F8000008 for class xe::kernel::XObject
+F> F8000004 HostPathDevice::ResolvePath(\gen)
+i> F8000004 xeRtlNtStatusToDosError C000000F => 2
+F> F8000004 HostPathDevice::ResolvePath(\gen)
+i> F8000004 Added handle:F800000C for class xe::kernel::XObject
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 Removed handle:F800000C for class xe::kernel::XFile
+F> F8000004 HostPathDevice::ResolvePath(\gen)
+i> F8000004 Added handle:F800000C for class xe::kernel::XObject
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 Removed handle:F800000C for class xe::kernel::XFile
+F> F8000004 HostPathDevice::ResolvePath(\gen)
+i> F8000004 Added handle:F800000C for class xe::kernel::XObject
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 Removed handle:F800000C for class xe::kernel::XFile
+F> F8000004 HostPathDevice::ResolvePath(\gen)
+i> F8000004 Added handle:F800000C for class xe::kernel::XObject
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 Removed handle:F800000C for class xe::kernel::XFile
+F> F8000004 HostPathDevice::ResolvePath(\gen)
+i> F8000004 Added handle:F800000C for class xe::kernel::XObject
+F> F8000004 HostPathDevice::ResolvePath(\gen)
+i> F8000004 Added handle:F8000010 for class xe::kernel::XObject
+F> F8000004 HostPathDevice::ResolvePath(\gen)
+i> F8000004 Added handle:F8000014 for class xe::kernel::XObject
+F> F8000004 HostPathDevice::ResolvePath(\gen)
+i> F8000004 Added handle:F8000018 for class xe::kernel::XObject
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 Added handle:F800001C for class xe::kernel::XObject
+i> F8000004 Added handle:F8000020 for class xe::kernel::XObject
+i> F8000004 XThreadF8000020 (7) Stack: 701B0000-701C0000
+K> F8000020 XThread::Execute thid 7 (handle=F8000020, 'XThread53EC (F8000020)', native=000053EC)
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 Added handle:F8000024 for class xe::kernel::XObject
+i> F8000004 XThreadF8000024 (8) Stack: 701E0000-701F0000
+i> F8000004 Added handle:F8000028 for class xe::kernel::XObject
+K> F8000024 XThread::Execute thid 8 (handle=F8000024, 'XThread0D08 (F8000024)', native=00000D08)
+i> F8000004 XThreadF8000028 (9) Stack: 70210000-70220000
+K> F8000028 XThread::Execute thid 9 (handle=F8000028, 'XThread33C8 (F8000028)', native=000033C8)
+i> F8000024 Added handle:F800002C for class xe::kernel::XObject
+i> F8000024 Added handle:F8000030 for class xe::kernel::XObject
+i> F8000028 Added handle:F8000034 for class xe::kernel::XObject
+i> 01000004 Selecting MOVDIR64M vastcpy.
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 Added handle:F8000038 for class xe::kernel::XObject
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 Added handle:F800003C for class xe::kernel::XObject
+i> F8000004 Added handle:F8000040 for class xe::kernel::XObject
+i> F8000004 XThreadF8000040 (A) Stack: 70240000-70280000
+i> F8000004 Added handle:F8000044 for class xe::kernel::XObject
+K> F8000040 XThread::Execute thid 10 (handle=F8000040, 'XThread1368 (F8000040)', native=00001368)
+i> F8000004 XThreadF8000044 (B) Stack: 702A0000-702E0000
+K> F8000044 XThread::Execute thid 11 (handle=F8000044, 'XThread19B4 (F8000044)', native=000019B4)
+i> 01000010 Added handle:F8000048 for class xe::kernel::XObject
+i> 01000010 Added handle:F800004C for class xe::kernel::XObject
+i> 01000010 Added handle:F8000050 for class xe::kernel::XObject
+i> F8000004 Added handle:F8000054 for class xe::kernel::XObject
+i> F8000004 Added handle:F8000058 for class xe::kernel::XObject
+i> F8000004 Added handle:F800005C for class xe::kernel::XObject
+i> F8000004 XThreadF800005C (C) Stack: 70300000-70310000
+K> F800005C XThread::Execute thid 12 (handle=F800005C, 'XThread4134 (F800005C)', native=00004134)
+i> F800005C Added handle:F8000060 for class xe::kernel::XObject
+i> F8000004 Added handle:F8000064 for class xe::kernel::XThread
+i> F8000004 Added handle:F8000068 for class xe::kernel::XObject
+i> F8000004 XThreadF8000068 (D) Stack: 70330000-70370000
+i> F8000004 Added handle:F800006C for class xe::kernel::XObject
+K> F8000068 XThread::Execute thid 13 (handle=F8000068, 'XThread35DC (F8000068)', native=000035DC)
+i> F8000004 XThreadF800006C (E) Stack: 70390000-703D0000
+i> F8000004 Added handle:F8000070 for class xe::kernel::XObject
+K> F800006C XThread::Execute thid 14 (handle=F800006C, 'XThread4E50 (F800006C)', native=00004E50)
+i> F8000004 XThreadF8000070 (F) Stack: 703F0000-70430000
+i> F8000004 Added handle:F8000074 for class xe::kernel::XObject
+K> F8000070 XThread::Execute thid 15 (handle=F8000070, 'XThread318C (F8000070)', native=0000318C)
+i> F8000004 XThreadF8000074 (10) Stack: 70450000-70490000
+K> F8000074 XThread::Execute thid 16 (handle=F8000074, 'XThread2A3C (F8000074)', native=00002A3C)
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F800005C Added handle:F8000078 for class xe::kernel::XObject
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 Added handle:F800007C for class xe::kernel::XObject
+i> F8000004 Added handle:F8000080 for class xe::kernel::XObject
+i> F8000004 XThreadF8000080 (11) Stack: 704B0000-704F0000
+!> F8000004 undefined extern call to 8273C86C XAudioOverrideSpeakerConfig
+K> F8000080 XThread::Execute thid 17 (handle=F8000080, 'XThread1118 (F8000080)', native=00001118)
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+F> F8000004 HostPathDevice::ResolvePath(\movies)
+i> F8000004 xeRtlNtStatusToDosError C000000F => 2
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 xeRtlNtStatusToDosError 103 => 3E5
+i> F8000004 Added handle:F8000084 for class xe::kernel::XObject
+i> F8000004 Added handle:F8000088 for class xe::kernel::XObject
+i> F8000004 XThreadF8000088 (12) Stack: 70510000-70520000
+K> F8000088 XThread::Execute thid 18 (handle=F8000088, 'XThread4BB4 (F8000088)', native=00004BB4)
+i> F8000004 Added handle:F800008C for class xe::kernel::XObject
+i> F8000004 Added handle:F8000090 for class xe::kernel::XObject
+i> F8000004 XThreadF8000090 (13) Stack: 70540000-70550000
+K> F8000090 XThread::Execute thid 19 (handle=F8000090, 'XThread2024 (F8000090)', native=00002024)
