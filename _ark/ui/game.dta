@@ -417,6 +417,8 @@
                TRUE}}
          FALSE})
    (milo_setup
+   ;speedmod
+	  {set $speedmod $leaderspeed}
 ;setup for venue fps
 	  {if {!= $emulatefps 24} {{$world iterate PostProc $p {$p set emulate_fps $emulatefps}}}
 	  {if {>= {$emulatefps 25} {$char iterate CharHair $hair {$hair reset 35}}

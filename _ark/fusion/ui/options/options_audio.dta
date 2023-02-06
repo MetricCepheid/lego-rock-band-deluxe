@@ -314,7 +314,10 @@
    (display_fps_msg
       ($fps)
 	  {vocal_track.btn set_localized {sprintf {localize fps_msg} {int $fps}}}) ;don't add 1 here because this is being fed the actual fps
-   (exit)
+   (exit
+      {set $leaderspeed $speedmod}
+   {do
+      {set $leaderspeed $speedmod}})
    (TRANSITION_COMPLETE_MSG
       {$this
          update_helpbar

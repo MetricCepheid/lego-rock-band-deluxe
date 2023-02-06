@@ -22,7 +22,8 @@
    (file
       "song_select_details.milo")
    (enter
-      {if {is_leader_local} {set $speedmod $leaderspeed}}
+      {if {is_leader_local} {session send_msg_to_all {` (set $speedmod {, $leaderspeed}) kNetReliable}}}
+	  {set $speedmod $leaderspeed}
       {loading.mnm
          animate
          (loop)})
@@ -544,6 +545,17 @@
    (clear_setlist FALSE)
    (saved_setlist FALSE)
    (enter
+      #ifdef KIOSK_DEMO
+      {if
+         {exists sort.lbl}
+         {sort.lbl set_showing FALSE}}
+      {if
+         {exists sort_title.lbl}
+         {sort_title.lbl set_showing FALSE}}
+      {if
+         {exists sorting_back_button.lbl}
+         {sorting_back_button.lbl set_showing FALSE}}
+      #endif
       {if
          {==
             {gamemode get song_select_mode}
@@ -665,6 +677,9 @@
          [check_setlist]
          TRUE}
       {$this update_helpbar}
+      #ifdef KIOSK_DEMO
+      {$this refresh_selected_song}
+      #endif
       {if_else
          [clear_setlist]
          {do
@@ -734,6 +749,7 @@
             {$this sync_song}
             {$this refresh_selected_song})
          #endif
+         #ifndef KIOSK_DEMO
          ({&&
                {== $action kAction_ViewModify}
                {!
@@ -744,6 +760,7 @@
             {song_offer_provider init_highlight}
             {$this sync_song}
             {$this refresh_selected_song})
+         #endif
          ({== $action kAction_Cancel}
             {if_else
                {song_offer_provider get_setlist_mode}
@@ -812,18 +829,33 @@
                {== $action kAction_Confirm}
                {!
                   {song.lst is_scrolling}}}
+            #ifdef KIOSK_DEMO
+            {do
+               ($song
+                  {song.lst selected_sym})
+               {if_else
+                  {'||'
+                     {== $song wearethechampions}
+                     {== $song thefinalcountdown}
+                     {== $song intoodeep}}
+                  {do
+                     {synth play button_select}
+                     {$this component_select song.lst $player $player_num}}
+                  {synth play button_error}}}
+            #else
             {do
                {synth play button_select}
-               {$this component_select song.lst $player $player_num}})
+               {$this component_select song.lst $player $player_num}}
+            #endif)
          (TRUE kDataUnhandled)})
    (on_button_held
       ($user_num $user $raw_button $action $pad_num)
+      #ifndef KIOSK_DEMO
       {if_else
          {== $action kAction_Confirm}
          {if
             {!
                {song.lst is_scrolling}}
-            #ifndef E3_DEMO
             {do
                ($selected
                   {song.lst selected_sym})
@@ -849,8 +881,7 @@
                         {synth play button_select}}}
                   {do
                      {$this component_select song.lst $user $user_num}
-                     {synth play button_select}}}}
-            #endif}
+                     {synth play button_select}}}}}
          {do
             {song_select_details_panel
                shortcut_enter
@@ -866,7 +897,8 @@
                      {== $action kAction_Option1}}
                   groups
                   sorts}
-               #endif}}})
+               #endif}}}
+      #endif)
    (SCROLL_MSG
       {synth play button_focus}
       {song_offer_provider play_preview -1}
@@ -976,35 +1008,50 @@
                   {song.lst get display_num}})
             {scroller.mesh set_showing $showing}}})
    (poll
+      {set $valid_preview_song TRUE}
+      #ifdef KIOSK_DEMO
       {do
-         ($last_play_delta
-            {-
-               {taskmgr ui_seconds}
-               [last_preview_play]})
-         {#ifdef HX_XBOX
-            if
-            {&&
-               {> $last_play_delta 0.0}
-               {!
-                  [preview_playing]}
-               {!
-                  {ui in_transition}}}
-            #else
-            if
-            {&&
-               {> $last_play_delta 1.25}
-               {!
-                  [preview_playing]}
-               {!
-                  {ui in_transition}}}
-            #endif
-            {do
-               {song_offer_provider
-                  play_preview
-                  [tmp_ix]}
-               {set
-                  [preview_playing]
-                  TRUE}}}})
+         ($song
+            {song.lst selected_sym})
+         {if_else
+            {'||'
+               {== $song wearethechampions}
+               {== $song thefinalcountdown}
+               {== $song intoodeep}}
+            {set $valid_preview_song TRUE}
+            {set $valid_preview_song FALSE}}}
+      #endif
+      {if
+         $valid_preview_song
+         {do
+            ($last_play_delta
+               {-
+                  {taskmgr ui_seconds}
+                  [last_preview_play]})
+            {#ifdef HX_XBOX
+               if
+               {&&
+                  {> $last_play_delta 0.0}
+                  {!
+                     [preview_playing]}
+                  {!
+                     {ui in_transition}}}
+               #else
+               if
+               {&&
+                  {> $last_play_delta 1.25}
+                  {!
+                     [preview_playing]}
+                  {!
+                     {ui in_transition}}}
+               #endif
+               {do
+                  {song_offer_provider
+                     play_preview
+                     [tmp_ix]}
+                  {set
+                     [preview_playing]
+                     TRUE}}}}})
    (refresh_sort
       {do
          ($ix
@@ -1208,6 +1255,16 @@
                get_selected_song
                {song.lst selected_pos}})
          {cond
+            #ifdef KIOSK_DEMO
+            ({&&
+                  {!= $song wearethechampions}
+                  {!= $song thefinalcountdown}
+                  {!= $song intoodeep}}
+               FALSE)
+            (TRUE
+               {meta_performer set_song $song}
+               TRUE)
+            #else
             ({== $song ''}
                {if
                   {song_offer_provider get_setlist_mode}
@@ -1217,17 +1274,17 @@
                FALSE)
             ({song_offer_provider get is_leaderboards}
                TRUE)
-            ({&&
-                  {song_mgr is_song_exported $song}
-                  {!
-                     {license_mgr is_export_license_valid}}}
-               {ui push_screen invalid_license_screen}
-               FALSE)
-            ({!
-                  {song_mgr is_song_shared $song}}
-               {do
-                  {ui push_screen invalid_selection_screen}
-                  FALSE})
+            ;({&& ;we remove the license mgr checks so we get past the first error loading ugc
+            ;      {song_mgr is_song_exported $song}
+            ;      {!
+            ;         {license_mgr is_export_license_valid}}}
+            ;   {ui push_screen invalid_license_screen}
+            ;   FALSE)
+            ;({! ;but then we pop this second error, so we remove it too
+            ;      {song_mgr is_song_shared $song}}
+            ;   {do
+            ;      {ui push_screen invalid_selection_screen}
+            ;      FALSE})
             ({song_mgr
                   has_missing_parts
                   $song
@@ -1236,10 +1293,10 @@
                   {missing_parts_screen set_song $song}
                   {ui push_screen missing_parts_screen}
                   FALSE})
-            ({!
-                  {song_mgr check_version $song}}
-               {ui push_screen invalid_version_screen}
-               FALSE)
+            ;({! ;but then we pop this THIRD error because the game isn't "up to date". bitch im on 1.01 fuck you
+            ;      {song_mgr check_version $song}}
+            ;   {ui push_screen invalid_version_screen}
+            ;   FALSE)
             (TRUE
                {do
                   {switch
@@ -1254,7 +1311,8 @@
                            "please set song_offer_provider is_leaderboards\n"})
                      {fail
                         "Unknown song_select_mode\n"}}
-                  TRUE})}})
+                  TRUE})
+            #endif}})
    (update_helpbar
       {if_else
          {'||'
@@ -1270,8 +1328,10 @@
                   set_config
                   ((cancel helpbar_setlist_cancel)
                      (confirm leader_hb_choosesong)
+                     #ifndef KIOSK_DEMO
                      (view_modify leader_hb_songfilter)
-                     (option helpbar_next_heading helpbar_next_heading_hold))}
+                     (option helpbar_next_heading helpbar_next_heading_hold)
+                     #endif)}
                {helpbar
                   set_config
                   ((cancel helpbar_setlist_revert)
@@ -1283,8 +1343,10 @@
                               {gamemode get song_select_mode}}
                            ''
                            helpbar_play_setlist})
+                     #ifndef KIOSK_DEMO
                      (view_modify leader_hb_songfilter)
-                     (option helpbar_next_heading helpbar_next_heading_hold))}}
+                     (option helpbar_next_heading helpbar_next_heading_hold)
+                     #endif)}}
             {helpbar
                set_config
                ((cancel
@@ -1302,8 +1364,10 @@
                      (confirm leader_hb_choosesong helpbar_start_setlist_hold)
                      (confirm leader_hb_choosesong)}
                   #endif
+                  #ifndef KIOSK_DEMO
                   (view_modify leader_hb_songfilter)
-                  (option helpbar_next_heading helpbar_next_heading_hold))}}
+                  (option helpbar_next_heading helpbar_next_heading_hold)
+                  #endif)}}
          {helpbar
             set_config
             ()}})
@@ -1329,7 +1393,12 @@
          #endif
          {switch
             {gamemode get song_select_mode}
-            (song_select_quickplay quickplay_venuescreen)
+            (song_select_quickplay
+               #ifdef KIOSK_DEMO
+               matchmaking_screen
+               #else
+               quickplay_venuescreen
+               #endif)
             (song_select_tour
                {if_else
                   {gamemode get_practice}
