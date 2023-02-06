@@ -757,17 +757,16 @@
          {ui goto_screen challenge_real_pre_songs_loading_screen}
          {ui goto_screen real_pre_songs_loading_screen}}
       #else
-      ;{if_else ;patch out preload so ugc works as is.
-      ;   [preload_ok] ;notice harmonix actually has a macro for this option above? lol
+      {if_else
+         [preload_ok]
          {if_else
             {challenge_mgr has_challenge}
             {ui goto_screen challenge_real_pre_songs_loading_screen}
             {ui goto_screen real_pre_songs_loading_screen}}
-         ;{band_ui ;this checks if the content is "corrupt"
-         ;   content_file_read_failed ;ugc is not corrupt
-         ;   [content_name] ;so we just ignore all this
-         ;   [corrupt]}
-        ; }
+         {band_ui
+            content_file_read_failed
+            [content_name]
+            [corrupt]}}
       #endif)}
 {new
    BandScreen
