@@ -410,15 +410,16 @@
       "")
    (corrupt FALSE)
    (enter
-      {if_else
-         [preload_ok]
+      ;{if_else
+      ;   [preload_ok]
          {ui
             goto_screen
             {gamemode get load_nextsong_screen}}
-         {band_ui
-            content_file_read_failed
-            [content_name]
-            [corrupt]}})}
+      ;   {band_ui
+      ;      content_file_read_failed
+      ;      [content_name]
+      ;      [corrupt]}}
+      )}
 {new
    GameTimePanel
    game_time_panel
