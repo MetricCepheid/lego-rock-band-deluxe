@@ -1272,17 +1272,17 @@
                FALSE)
             ({song_offer_provider get is_leaderboards}
                TRUE)
-            ({&&
-                  {song_mgr is_song_exported $song}
-                  {!
-                     {license_mgr is_export_license_valid}}}
-               {ui push_screen invalid_license_screen}
-               FALSE)
-            ({!
-                  {song_mgr is_song_shared $song}}
-               {do
-                  {ui push_screen invalid_selection_screen}
-                  FALSE})
+            ;({&& ;we remove the license mgr checks so we get past the first error loading ugc
+            ;      {song_mgr is_song_exported $song}
+            ;      {!
+            ;         {license_mgr is_export_license_valid}}}
+            ;   {ui push_screen invalid_license_screen}
+            ;   FALSE)
+            ;({! ;but then we pop this second error, so we remove it too
+            ;      {song_mgr is_song_shared $song}}
+            ;   {do
+            ;      {ui push_screen invalid_selection_screen}
+            ;      FALSE})
             ({song_mgr
                   has_missing_parts
                   $song
@@ -1291,10 +1291,10 @@
                   {missing_parts_screen set_song $song}
                   {ui push_screen missing_parts_screen}
                   FALSE})
-            ({!
-                  {song_mgr check_version $song}}
-               {ui push_screen invalid_version_screen}
-               FALSE)
+            ;({! ;but then we pop this THIRD error because the game isn't "up to date". bitch im on 1.01 fuck you
+            ;      {song_mgr check_version $song}}
+            ;   {ui push_screen invalid_version_screen}
+            ;   FALSE)
             (TRUE
                {do
                   {switch
