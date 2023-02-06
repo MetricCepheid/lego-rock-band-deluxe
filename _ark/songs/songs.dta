@@ -349,7 +349,7 @@
    (song_id 752)
    (rating 1)
    (short_version 129845)
-   (album_art FALSE)
+   (album_art TRUE)
    (year_released 1999)
    (album_name
       "Enema of the State")
@@ -3961,7 +3961,7 @@
    (song_id 752)
    (rating 1)
    (short_version 129845)
-   (album_art FALSE)
+   (album_art TRUE)
    (year_released 1999)
    (album_name
       "Enema of the State")
