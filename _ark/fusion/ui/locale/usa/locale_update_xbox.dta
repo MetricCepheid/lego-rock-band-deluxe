@@ -442,3 +442,17 @@
 (wreck_n_roll_offer_desc
    "During Rock Power Challenges, the band members often take turns, giving the other band members a chance to see the action unfold.\n\nThe band also needs to succeed as a unit, so there is just one marker on the crowd meter for the whole band... and if the marker hits the bottom you'll have to start again, WHOA!"
    423)
+(main_store
+   "DELUXE OPTIONS")
+;; RB3 Genres
+(hardrock "Hard Rock")
+(jrock "J-Rock")
+(fusion "Fusion")
+(latin "Latin")
+(classical "Classical")
+(inspirational "Inspirational")
+(world "World")
+(hiphoprap "Hip-Hop/Rap")
+(reggaeska "Reggae/Ska")
+(rbsoulfunk "R&B/Soul/Funk")
+(popdanceelectronic "Pop/Dance/Electronic")
