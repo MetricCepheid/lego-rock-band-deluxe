@@ -3903,7 +3903,7 @@
    (song_id 751)
    (rating 1)
    (short_version 130426)
-   (album_art FALSE)
+   (album_art TRUE)
    (year_released 2004)
    (album_name
       "Shrek 2: Motion Picture Soundtrack")
