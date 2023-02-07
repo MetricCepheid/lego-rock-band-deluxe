@@ -298,7 +298,12 @@ Lederhosen
 Maharajah
 Redindian
 Numbchuck
-Robinhood)
+Robinhood
+#ifdef HX_XBOX
+dlc_santa
+dlc_snowman
+dlc_elf
+#endif)
    (bands
       (queen
          (Queen_Brian Queen_Roger Queen_Freddie Queen_John))
