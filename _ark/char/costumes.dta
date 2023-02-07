@@ -39,7 +39,7 @@
       )
       (costume_heather_moonbeam
          (is_likeness TRUE)
-         (cost 500000)
+         (unlocked TRUE)
          (genre lrb_shops_familars)
          (outfit
             (heads MoonbeamHead)
@@ -48,7 +48,7 @@
             (hair lrbh_moonbeam)))
       (costume_buzzsaw
          (is_likeness TRUE)
-         (cost 500000)
+         (unlocked TRUE)
          (genre lrb_shop_familars)
          (outfit
             (heads BuzzsawHead)
@@ -57,7 +57,7 @@
             (hair lrbh_buzzsaw)))
       (costume_sharkey
          (is_likeness TRUE)
-         (cost 500000)
+         (unlocked TRUE)
          (genre lrb_shop_familars)
          (outfit
             (heads SharkeyHead)
@@ -104,7 +104,7 @@
             (hair lrbh_flapper)))
       (costume_grace_williams
          (is_likeness TRUE)
-         (cost 500000)
+         (unlocked TRUE)
          (genre lrb_shop_familars)
          (outfit
             (heads GraceHead)
@@ -115,7 +115,7 @@
                (colors 12 12))))
       (costume_mekon_gemini
          (is_likeness TRUE)
-         (cost 500000)
+         (unlocked TRUE)
          (genre lrb_shop_familars)
          (outfit
             (heads GeminiHead)
@@ -124,7 +124,7 @@
             (hair lrbh_gemini)))
       (costume_fritzi_kostopoulos
          (is_likeness TRUE)
-         (cost 500000)
+         (unlocked TRUE)
          (genre lrb_shop_familars)
          (outfit
             (heads FritziHead)
@@ -133,7 +133,7 @@
             (hair lrbh_fritzi)))
       (costume_duke_of_gravity
          (is_likeness TRUE)
-         (cost 500000)
+         (unlocked TRUE)
          (genre lrb_shop_familars)
          (outfit
             (heads GravityHead)
@@ -151,7 +151,7 @@
             (hair lrbh_lance)))
       (costume_maynard_winter
          (is_likeness TRUE)
-         (cost 500000)
+         (unlocked TRUE)
          (genre lrb_shop_familars)
          (outfit
             (heads MaynardHead)
@@ -173,7 +173,7 @@
                (colors 11 11))))
       (costume_ol_smokey
          (is_likeness TRUE)
-         (cost 500000)
+         (unlocked TRUE)
          (genre lrb_shop_familars)
          (outfit
             (heads SmokeyHead)
@@ -182,7 +182,7 @@
             (hair lrbh_smokey)))
       (costume_dora_sullivan
          (is_likeness TRUE)
-         (cost 500000)
+         (unlocked TRUE)
          (genre lrb_shop_familars)
          (outfit
             (heads DoraHead)
@@ -191,7 +191,7 @@
             (hair lrbh_dora)))
       (costume_penelope_mcqueen
          (is_likeness TRUE)
-         (cost 500000)
+         (unlocked TRUE)
          (genre lrb_shop_familars)
          (outfit
             (heads McqueenHead)
@@ -209,7 +209,7 @@
             (hair lrbh_mothership)))
       (costume_earl_stephens
          (is_likeness TRUE)
-         (cost 500000)
+         (unlocked TRUE)
          (genre lrb_shop_familars)
          (outfit
             (heads EarlHead)
@@ -217,6 +217,7 @@
             (legs EarlLegs)
             (hair lrbh_earl)))
       (Roadie01
+         (unlocked TRUE)
          (genre lrb_shop_rock)
          (outfit
             (torso roadie01)
@@ -230,6 +231,7 @@
                lrbh_roadiechops
                (colors 4 4))))
       (Roadie02
+         (unlocked TRUE)
          (genre lrb_shop_rock)
          (outfit
             (torso
@@ -243,6 +245,7 @@
                (colors 4 4))
             (hair lrbh_glamroadie)))
       (Roadie03
+         (unlocked TRUE)
          (genre lrb_shop_rock)
          (outfit
             (torso roadie03)
@@ -256,6 +259,7 @@
                lrbh_emover
                (colors 6 0))))
       (manager
+         (unlocked TRUE)
          (genre lrb_shop_rock)
          (outfit
             (torso ManagerChest)
@@ -267,6 +271,7 @@
                lrbh_greaser2
                (colors 23 23))))
       (street_worker
+         (unlocked TRUE)
          (genre lrb_shop_rock)
          (outfit
             (torso
@@ -280,6 +285,7 @@
                (colors 4 4))
             (hats bbcapfwd)))
       (unpaid_intern
+         (unlocked TRUE)
          (genre lrb_shop_rock)
          (outfit
             (torso
@@ -295,6 +301,7 @@
                backwardscap
                (colors 33 0))))
       (record_producer
+         (unlocked TRUE)
          (genre lrb_shop_rock)
          (outfit
             (torso
@@ -308,6 +315,7 @@
                hair_singer
                (colors 0 0))))
       (marketing_executive
+         (unlocked TRUE)
          (genre lrb_shop_rock)
          (outfit
             (torso MarketingExec)
@@ -321,6 +329,7 @@
                lrbh_dancingqueen
                (colors 0 0))))
       (music_video_director
+         (unlocked TRUE)
          (genre lrb_shop_rock)
          (outfit
             (torso MusicVideoProducer)
@@ -334,6 +343,7 @@
                bbcapfwd
                (colors 0 0))))
       (costume_guru
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads GuruHead)
@@ -345,6 +355,7 @@
                (colors 4 0))
             (hair lrbh_baldeagle)))
       (stylist
+         (unlocked TRUE)
          (genre lrb_shop_rock)
          (outfit
             (torso MetalB)
@@ -354,6 +365,7 @@
                (colors 4 4))
             (hair lrbh_lazyhawk)))
       (costume_accountant
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads
@@ -369,6 +381,7 @@
                hair_accountant
                (colors 12 0))))
       (top_promoter
+         (unlocked TRUE)
          (genre lrb_shop_rock)
          (outfit
             (torso
@@ -384,6 +397,7 @@
                lrbh_gravity
                (colors 24 24))))
       (top_sound_engineer
+         (unlocked TRUE)
          (genre lrb_shop_rock)
          (outfit
             (torso
@@ -400,7 +414,7 @@
                hat_demophones
                (colors 33 33))))
       (costume_alien
-         (cost 250000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -409,7 +423,7 @@
             (hair no_hair)
             (hats no_hat)))
       (costume_alienclown
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -422,7 +436,7 @@
                (colors 30 30))
             (hats no_hat)))
       (costume_aliencommuter
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -433,7 +447,7 @@
             (hair no_hair)
             (hats hat_commuter)))
       (costume_alienconstruction
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -444,7 +458,7 @@
             (hair no_hair)
             (hats hardhat)))
       (costume_aliencow
-         (cost 250000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -453,7 +467,7 @@
             (hair no_hair)
             (hats hat_aliencow)))
       (costume_aliendamsel
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -462,7 +476,7 @@
             (hair no_hair)
             (hats damselhair)))
       (costume_aliendino
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -471,7 +485,7 @@
             (hair no_hair)
             (hats dinohunterhat)))
       (costume_aliendiver
-         (cost 250000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -482,7 +496,7 @@
             (hair no_hair)
             (hats hat_scuba)))
       (costume_alieneskimo
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -493,7 +507,7 @@
                hat_aehood
                (colors 23 14))))
       (costume_alienfarmer
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -504,7 +518,7 @@
             (hair no_hair)
             (hats hat_farmer01)))
       (costume_alienfireman
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -515,7 +529,7 @@
             (hair no_hair)
             (hats hat_fireman)))
       (costume_alienislander
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienIslanderHead)
@@ -524,7 +538,7 @@
             (hair hair_islandermale)
             (hats no_hat)))
       (costume_alienjester
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -533,7 +547,7 @@
             (hair no_hair)
             (hats jesterhat)))
       (costume_alienmonkey
-         (cost 250000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -544,7 +558,7 @@
             (hair no_hair)
             (hats hat_alienmonkey)))
       (costume_alienpirate_bones
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -557,7 +571,7 @@
                Hat02
                (colors 0 0))))
       (costume_alienpirate_gingerbeard
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -568,7 +582,7 @@
             (hair no_hair)
             (hats hat_piratesock)))
       (costume_alienpirate_pegleg
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -577,7 +591,7 @@
             (hair no_hair)
             (hats piratebicornehat)))
       (costume_alienpitbabe
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -590,7 +604,7 @@
             (hair no_hair)
             (hats pitbabe01hat)))
       (costume_alienpitcrew
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienBalaclavaHead)
@@ -601,7 +615,7 @@
             (hair no_hair)
             (hats hat_racemanager)))
       (costume_alienrocker1
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -612,7 +626,7 @@
                (colors 12 12))
             (hats no_hat)))
       (costume_alienrocker2
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -623,7 +637,7 @@
                (colors 6 12))
             (hats no_hat)))
       (costume_alienrocker3
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -633,7 +647,7 @@
                lrbh_chairmancap
                (colors 45 12))))
       (costume_alienskater
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -643,7 +657,7 @@
                (colors 35 0))
             (hair lrbh_curtains)))
       (costume_alientraindriver
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -656,7 +670,7 @@
                hat_conductor
                (colors 33 33))))
       (costume_alienvillage
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -667,7 +681,7 @@
             (hair no_hair)
             (hats hat_villageidiot)))
       (costume_alienwitch
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -676,7 +690,7 @@
             (hair no_hair)
             (hats hat_witch)))
       (costume_alienwizard
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -685,7 +699,7 @@
             (hair no_hair)
             (hats hat_wizard)))
       (costume_alienzookeeper
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_secret)
          (outfit
             (heads AlienHead)
@@ -696,7 +710,7 @@
             (hair no_hair)
             (hats zookeeperhat)))
       (costume_astronaut
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_other)
          (outfit
             (heads AstronautHead)
@@ -706,7 +720,7 @@
                (colors 4 0))
             (hats hat_astronaut)))
       (costume_skeleton
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_rock)
          (outfit
             (heads SkelCostumeHead)
@@ -715,7 +729,7 @@
             (hats no_hat)
             (hair no_hair)))
       (costume_king
-         (cost 250000)
+         (unlocked TRUE)
          (genre lrb_shop_castle)
          (outfit
             (heads KingHead)
@@ -723,7 +737,7 @@
             (legs KingLegs)
             (hats kingcrown)))
       (costume_queen
-         (cost 180000)
+         (unlocked TRUE)
          (genre lrb_shop_castle)
          (outfit
             (heads QueenHead)
@@ -731,7 +745,7 @@
             (legs QueenLegs)
             (hats queenhair)))
       (costume_damsel
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_castle)
          (outfit
             (heads DamselHead)
@@ -739,7 +753,7 @@
             (legs DamselLegs)
             (hats damselhair)))
       (costume_knight
-         (cost 50000)
+         (unlocked TRUE)
          (genre lrb_shop_castle)
          (outfit
             (heads KnightHead)
@@ -747,7 +761,7 @@
             (legs KnightLegs)
             (hats hat_knight)))
       (costume_soldier
-         (cost 45000)
+         (unlocked TRUE)
          (genre lrb_shop_castle)
          (outfit
             (heads SoldierHead)
@@ -755,7 +769,7 @@
             (legs SoldierLegs)
             (hats soldierhelmet)))
       (costume_skeleton_cal
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_castle)
          (outfit
             (heads Skeleton01Head)
@@ -764,7 +778,7 @@
             (hats no_hat)
             (hair no_hair)))
       (costume_skeleton_skull
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_castle)
          (outfit
             (heads Skeleton02Head)
@@ -773,7 +787,7 @@
             (hats no_hat)
             (hair no_hair)))
       (costume_skel_warr_shakes
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_castle)
          (outfit
             (heads Skeleton02Head)
@@ -781,7 +795,7 @@
             (legs Legs02)
             (hats hat_skeletonwarrior01)))
       (costume_skel_warr_rattles
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_castle)
          (outfit
             (heads Skeleton02Head)
@@ -793,7 +807,7 @@
                hat_knight
                (colors 0 0))))
       (costume_orc
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_castle)
          (outfit
             (heads HeadOrc)
@@ -801,7 +815,7 @@
             (legs OrcLegs)
             (hats orchelmet)))
       (costume_jester
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_castle)
          (outfit
             (heads Head01)
@@ -809,7 +823,7 @@
             (legs JesterLegs)
             (hats jesterhat)))
       (costume_madscientist
-         (cost 125000)
+         (unlocked TRUE)
          (genre lrb_shop_other)
          (outfit
             (heads MadScientistHead)
@@ -817,7 +831,7 @@
             (legs MadScientistLegs)
             (hair hair_madscientist)))
       (costume_arcticmale
-         (cost 30000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads AexplorerMaleHead)
@@ -827,7 +841,7 @@
                hat_aehood
                (colors 19 4))))
       (costume_arcticfemale
-         (cost 30000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads AexplorerFemaleHead)
@@ -837,7 +851,7 @@
                hat_aehood
                (colors 19 4))))
       (costume_wrappedup
-         (cost 125000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads WufHead)
@@ -845,7 +859,7 @@
             (legs WuFLegs)
             (hats hat_allwrappedup)))
       (costume_eskimomale
-         (cost 30000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads Head01)
@@ -855,7 +869,7 @@
                hat_aehood
                (colors 23 14))))
       (costume_eskimofemale
-         (cost 30000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads DamselHead)
@@ -865,7 +879,7 @@
                hat_aehood
                (colors 23 14))))
       (costume_sailor
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads CowboyHead)
@@ -875,7 +889,7 @@
                (colors 4 0))
             (hats hat_sailor)))
       (costume_diver
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads deepseadiverhead)
@@ -885,7 +899,7 @@
                (colors 12 12))
             (hats no_hat)))
       (costume_oldwoman
-         (cost 45000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads OldLadyHead)
@@ -893,7 +907,7 @@
             (legs OldLadyLegs)
             (hair hair_oldlady)))
       (costume_oldman
-         (cost 45000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads OldManHead)
@@ -901,7 +915,7 @@
             (legs OldManLegs)
             (hair hair_oldman)))
       (costume_cowboy
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads CowboyHead)
@@ -910,7 +924,7 @@
             (hats cowboyhatnneck)
             (hair no_hair)))
       (costume_dinohunter
-         (cost 125000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads DinoHunterHead)
@@ -918,7 +932,7 @@
             (legs DinoHunterLegs)
             (hats dinohunterhat)))
       (costume_dinovisitor
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads ConductorHead)
@@ -926,7 +940,7 @@
             (legs DinoVisitorLegs)
             (hats hat_dinovisitor)))
       (costume_hotelmanager
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads Head01)
@@ -936,7 +950,7 @@
                hair_accountant
                (colors 0 0))))
       (costume_islandchief
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads Head01)
@@ -944,7 +958,7 @@
             (legs IslanderChiefLegs)
             (hats hat_islanderchief)))
       (costume_islandermale
-         (cost 30000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads IslanderMaleHead)
@@ -952,7 +966,7 @@
             (legs IslanderLegs)
             (hair hair_islandermale)))
       (costume_islanderfemale
-         (cost 30000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads IslanderFemaleHead)
@@ -960,7 +974,7 @@
             (legs IslanderLegs)
             (hair hair_islanderfemale)))
       (costume_clown_miss_direction
-         (cost 125000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Clown01Head)
@@ -972,7 +986,7 @@
                hair_madscientist
                (colors 30 30))))
       (costume_clown_mr_trick
-         (cost 125000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Clown02Head)
@@ -982,7 +996,7 @@
                lrbh_baldeagle
                (colors 45 45))))
       (costume_zookeeper
-         (cost 45000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads FiremanHead)
@@ -992,7 +1006,7 @@
                (colors 34 0))
             (hats zookeeperhat)))
       (costume_zookeeper_boss
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads ConductorHead)
@@ -1002,7 +1016,7 @@
                (color 13 13))
             (hats hat_zookeeperboss)))
       (costume_farmer_bobbyjoe
-         (cost 45000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Farmer01Head)
@@ -1012,7 +1026,7 @@
                (colors 33 0))
             (hats hat_farmer01)))
       (costume_farmer_billyray
-         (cost 45000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Farmer02Head)
@@ -1024,7 +1038,7 @@
                hat_farmer01
                (colors 12 12))))
       (costume_farmer_jimbob
-         (cost 45000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Farmer03Head)
@@ -1036,7 +1050,7 @@
                hair_oldman
                (colors 1 1))))
       (costume_villageidiot
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads HillbillyHead)
@@ -1046,7 +1060,7 @@
                (colors 2 2))
             (hats hat_villageidiot)))
       (costume_racedriver
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads F1DriverHead)
@@ -1056,7 +1070,7 @@
                (colors 6 0))
             (hats hat_f1driver)))
       (costume_pitcrew_blue
-         (cost 45000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads F1DriverHead)
@@ -1069,7 +1083,7 @@
             (hair no_hair)
             (hats no_hat)))
       (Racing_Team_Member_Dark_Blue
-         (cost 30000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads F1DriverHead)
@@ -1083,7 +1097,7 @@
                hat_racemanager
                (colors 33 0))))
       (Racing_Team_Captain
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads ConductorHead)
@@ -1097,7 +1111,7 @@
                hat_racemanager
                (colors 33 33))))
       (costume_pitbabe_britney
-         (cost 50000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Pitbabe01Head)
@@ -1109,7 +1123,7 @@
                (colors 6 0))
             (hats pitbabe01hat)))
       (costume_pitbabe_whitney
-         (cost 50000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Pitbabe02Head)
@@ -1123,7 +1137,7 @@
                pitbabe02hat
                (colors 0 18))))
       (costume_piratemale_mrpatches
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads Pirate03Head)
@@ -1135,7 +1149,7 @@
                Hat02
                (colors 12 12))))
       (costume_piratefemale_mrspatches
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads Pirate05Head)
@@ -1145,7 +1159,7 @@
                (colors 28 28))
             (hair hair_pirate05)))
       (costume_piratemale_bones
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads Pirate02Head)
@@ -1155,7 +1169,7 @@
                (colors 0 0))
             (hats Hat02)))
       (costume_piratemale_gingerbeard
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads Pirate04Head)
@@ -1165,7 +1179,7 @@
                (colors 33 33))
             (hats hat_piratesock)))
       (costume_piratemale_pegleg
-         (cost 150000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads Pirate01Head)
@@ -1173,7 +1187,7 @@
             (legs Legs06)
             (hats piratebicornehat)))
       (costume_imperial
-         (cost 45000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads Head01)
@@ -1183,7 +1197,7 @@
                (colors 3 0))
             (hats hat_imperialguard)))
       (costume_hailstorm
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads HaleHead)
@@ -1191,7 +1205,7 @@
             (legs HaleStormLegs)
             (hair lrbh_halestorm)))
       (costume_viking
-         (cost 125000)
+         (unlocked TRUE)
          (genre lrb_shop_adventure)
          (outfit
             (heads VikingHead)
@@ -1199,7 +1213,7 @@
             (legs VikingLegs)
             (hats hat_viking)))
       (costume_miner_boulders
-         (cost 120000)
+         (unlocked TRUE)
          (genre lrb_shop_other)
          (outfit
             (heads Miner01Head)
@@ -1207,7 +1221,7 @@
             (legs MinerLegs)
             (hats hat_miner01)))
       (costume_miner_rubble
-         (cost 120000)
+         (unlocked TRUE)
          (genre lrb_shop_other)
          (outfit
             (heads Miner02Head)
@@ -1215,7 +1229,7 @@
             (legs MinerLegs)
             (hats hat_miner01)))
       (costume_miner_gravel
-         (cost 120000)
+         (unlocked TRUE)
          (genre lrb_shop_other)
          (outfit
             (heads Miner04Head)
@@ -1223,7 +1237,7 @@
             (legs MinerLegs)
             (hats hat_miner03)))
       (costume_miner_dust
-         (cost 120000)
+         (unlocked TRUE)
          (genre lrb_shop_other)
          (outfit
             (heads Miner03Head)
@@ -1231,7 +1245,7 @@
             (legs MinerLegs)
             (hats hat_miner02)))
       (costume_ghost_shivers
-         (cost 250000)
+         (unlocked TRUE)
          (genre lrb_shop_spooky)
          (outfit
             (heads Ghost02Head)
@@ -1242,7 +1256,7 @@
             (hair no_hair)
             (hats no_hat)))
       (costume_ghost_dusty
-         (cost 250000)
+         (unlocked TRUE)
          (genre lrb_shop_spooky)
          (outfit
             (heads Ghost03Head)
@@ -1254,7 +1268,7 @@
                lrbh_cowboyrocker
                (colors 20 20))))
       (costume_wizard
-         (cost 125000)
+         (unlocked TRUE)
          (genre lrb_shop_spooky)
          (outfit
             (heads WizardHead)
@@ -1264,7 +1278,7 @@
             (legs wizardpelvislegs)
             (hats hat_wizard)))
       (costume_witch
-         (cost 125000)
+         (unlocked TRUE)
          (genre lrb_shop_spooky)
          (outfit
             (heads WitchHead)
@@ -1272,7 +1286,7 @@
             (legs witchpelvislegs)
             (hats hat_witch)))
       (costume_halloween_thecount
-         (cost 150000)
+         (unlocked TRUE)
          (genre lrb_shop_spooky)
          (outfit
             (heads DraculaHead)
@@ -1282,7 +1296,7 @@
                (colors 0 0))
             (hair Hair25dracula)))
       (costume_halloween_frankie
-         (cost 125000)
+         (unlocked TRUE)
          (genre lrb_shop_spooky)
          (outfit
             (heads FrankensteinHead)
@@ -1290,7 +1304,7 @@
             (legs FrankenstienLegs)
             (hats hat_frank)))
       (costume_halloween_mummy
-         (cost 100000)
+         (unlocked TRUE)
          (genre lrb_shop_spooky)
          (outfit
             (heads MummyHead)
@@ -1299,7 +1313,7 @@
             (hair no_hair)
             (hats no_hat)))
       (costume_zombie
-         (cost 150000)
+         (unlocked TRUE)
          (genre lrb_shop_spooky)
          (outfit
             (heads ZombieHead)
@@ -1308,7 +1322,7 @@
             (hats no_hat)
             (hair no_hair)))
       (costume_halloween_furball
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_spooky)
          (outfit
             (heads Head08)
@@ -1317,7 +1331,7 @@
             (hats no_hat)
             (hair no_hair)))
       (costume_halloween_jacko
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_spooky)
          (outfit
             (heads PumpkinheadHead)
@@ -1328,7 +1342,7 @@
             (hats no_hat)
             (hair no_hair)))
       (costume_construction
-         (cost 30000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Head01)
@@ -1338,7 +1352,7 @@
                (colors 33 33))
             (hats hardhat)))
       (costume_foreman
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads ForemanHead)
@@ -1348,7 +1362,7 @@
                (colors 19 19))
             (hats hardhat)))
       (costume_roughneck
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_other)
          (outfit
             (heads FiremanHead)
@@ -1358,7 +1372,7 @@
                (colors 1 0))
             (hats hardhat)))
       (costume_mayor
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads MayorHead)
@@ -1368,7 +1382,7 @@
                (colors 2 0))
             (hair hair_oldman)))
       (costume_chauffeur
-         (cost 45000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Head01)
@@ -1380,7 +1394,7 @@
                (colors 0 0))
             (hats hat_chauffer)))
       (costume_cop
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Head01)
@@ -1390,7 +1404,7 @@
                (colors 0 0))
             (hats hat_police)))
       (costume_fireman
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads FiremanHead)
@@ -1400,7 +1414,7 @@
                (colors 0 0))
             (hats hat_fireman)))
       (costume_nurse
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads NurseHead)
@@ -1408,7 +1422,7 @@
             (legs NurseLegs)
             (hair lrbh_wig08)))
       (costume_doctor
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads CommuterHead)
@@ -1420,7 +1434,7 @@
                hair_accountant
                (colors 0 0))))
       (costume_skater_cap
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Head01)
@@ -1430,7 +1444,7 @@
                (colors 12 12))
             (hats backwardscap)))
       (costume_skater_camo
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Head01)
@@ -1440,7 +1454,7 @@
                (colors 29 29))
             (hair lrbh_curtains)))
       (costume_schoolboy
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads SchoolBoyHead)
@@ -1450,7 +1464,7 @@
                bbcapfwd
                (colors 0 0))))
       (costume_chef
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Head01)
@@ -1460,7 +1474,7 @@
                (colors 0 0))
             (hats hat_chef)))
       (costume_waiter
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Head01)
@@ -1470,7 +1484,7 @@
                (colors 0 0))
             (hair hair_accountant)))
       (costume_dinnersuit
-         (cost 45000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Head01)
@@ -1480,7 +1494,7 @@
                (colors 0 0))
             (hair hair_accountant)))
       (costume_traindriver
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads Farmer01Head)
@@ -1492,7 +1506,7 @@
                hat_conductor
                (colors 33 33))))
       (costume_trainconductor
-         (cost 45000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads ConductorHead)
@@ -1502,7 +1516,7 @@
                (colors 33 0))
             (hats hat_conductor)))
       (costume_commuter
-         (cost 30000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads CommuterHead)
@@ -1512,7 +1526,7 @@
                (colors 1 0))
             (hats hat_commuter)))
       (costume_lederhosen
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_city)
          (outfit
             (heads ForemanHead)
@@ -1520,7 +1534,7 @@
             (legs LederhosenLegs)
             (hats hat_lederhosen)))
       (costume_maharajah
-         (cost 80000)
+         (unlocked TRUE)
          (genre lrb_shop_other)
          (outfit
             (heads Head01)
@@ -1530,7 +1544,7 @@
                (colors 18 0))
             (hats hat_maharaja)))
       (costume_redindian
-         (cost 60000)
+         (unlocked TRUE)
          (genre lrb_shop_other)
          (outfit
             (heads NativeAmericanHead)
@@ -1538,7 +1552,7 @@
             (legs NativeAmericanLegs)
             (hats americanheaddress)))
       (costume_numbchuck
-         (cost 150000)
+         (unlocked TRUE)
          (genre lrb_shop_other)
          (outfit
             (heads NumbchuckHead)
@@ -1548,7 +1562,7 @@
                (colors 0 0))
             (hats ninjahat)))
       (costume_robinhood
-         (cost 125000)
+         (unlocked TRUE)
          (genre lrb_shop_other)
          (outfit
             (heads Head01)
