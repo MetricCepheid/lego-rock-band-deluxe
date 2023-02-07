@@ -33,8 +33,6 @@ From then on simply run "_build_ps3.bat" or "_build_xbox.bat", depending on the 
 
 On ps3/rpcs3, copy all files in "_build/ps3/" to "/dev_hdd0/game/BLUS30382/"
 Match the file system and overwrite the files.
-If you're on PS3 hardware, you will need the game dumped to your system.
-Then, copy the contents of the "ps3 disc patch" to where your vanilla game is located.
 
 On Xbox, copy the gen folder and the xex from "_build/xbox/" to the location you have installed LEGO Rock Band.
 
