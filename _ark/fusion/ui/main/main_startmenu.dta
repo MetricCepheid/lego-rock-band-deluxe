@@ -76,6 +76,7 @@
             [start_button_loaded]
             FALSE}
          {$this set_alpha_threshold}
+         {$this iterate UILabel $l {$l set_showing FALSE}}
          {main_LegoLogo.tex set_bitmap "fusion/ui/splash/lego_dx_lego.png"}
          {main_rblogo.tex set_bitmap "fusion/ui/splash/lego_dx_rockband.png"}
          {main_rblogo_TM.tex set_bitmap "fusion/ui/splash/lego_dx_rockband.png"}
