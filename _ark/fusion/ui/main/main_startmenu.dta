@@ -76,6 +76,11 @@
             [start_button_loaded]
             FALSE}
          {$this set_alpha_threshold}
+         {main_LegoLogo.tex set_bitmap "fusion/ui/splash/lego_dx_lego.png"}
+         {main_rblogo.tex set_bitmap "fusion/ui/splash/lego_dx_rockband.png"}
+         {main_rblogo_TM.tex set_bitmap "fusion/ui/splash/lego_dx_rockband.png"}
+         {Main_RockBand_TM_Glow.mesh set_local_scale .9 3.5 1}
+         {Main_RockBandLogo.mesh set_local_scale .9 3.5 1}
          #ifdef HX_PS3
          {start.btn
             set
