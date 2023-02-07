@@ -416,13 +416,9 @@
    (file
       "../splash/startup_mtv_panel.milo")
    (enter
+      {$this set_showing FALSE}
       {taskmgr clear_tasks}
-      {script_task
-         kTaskUISeconds
-         (script
-            {$this move_on})
-         (once TRUE)
-         (delay 2)})
+         {ui goto_screen main_startscreen})
    (move_on
       {taskmgr clear_tasks}
       {ui goto_screen splash_harmonix_screen})
