@@ -95,9 +95,6 @@
          {int
             [alpha_threshold]}})
    (enter
-      {set $trackspeed 1.0}
-	  {set $speedmod 1.0}
-	  {set $emulatefps 24}
       {set
          [alpha_threshold_fading]
          FALSE}
