@@ -139,7 +139,7 @@
                "UP0006-BLUS30147_00")
             (test
                "UP0006-NPXX00360_00")))
-	 (rb3
+     (rb3
          (title_id
             (live
                "ROCKBAND3")
@@ -149,7 +149,18 @@
             (live
                "UP8802-BLUS30463_00")
             (test
-               "UP0006-NPXX00500_00")))	 
+               "UP0006-NPXX00500_00")))
+     (rb2e
+         (title_id
+            (live
+               "ROCKBAND2")
+            (test
+               "NPXX00501"))
+         (service_id
+            (live
+               "UP8802-BLUS30462_00")
+            (test
+               "UP0006-NPXX00499_00")))
       #ifdef _LRB_REGION_EU
       (rb1
          (title_id
