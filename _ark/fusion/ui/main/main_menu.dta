@@ -63,6 +63,7 @@
    (focus_btn quickplay.btn)
    (load)
    (enter
+      {main_rblogo.tex set_bitmap "fusion/ui/main/main_rblogo.png"}
       {gamemode set_practice 0}
       {gamemode set_mode init}
       {user_mgr clear_users}
