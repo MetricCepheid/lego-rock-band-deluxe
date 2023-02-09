@@ -1,3 +1,18 @@
+#define RANDOM_ENVIRONMENT_COLOR
+(
+   {$this iterate Environ $l {$l set ambient_color {pack_color {/ {random_int 20 99} 100} {/ {random_int 20 99} 100} {/ {random_int 20 99} 100}}}}
+)
+#define RANDOM_LIGHT_COLOR
+(
+   {$this iterate Light $l {$l set color {pack_color {/ {random_int 0 99} 100} {/ {random_int 0 99} 100} {/ {random_int 0 99} 100}}}}
+)
+#define RANDOM_MAT_COLOR
+(
+;{$this iterate Environ $l {$l set use_color_adjust TRUE}}
+      
+   ;{$this iterate Environ $l {$l set fog_enable TRUE}}
+   {$this iterate Mat $l {$l set color {pack_color {/ {random_int 20 99} 100} {/ {random_int 20 99} 100} {/ {random_int 20 99} 100}}}}
+)
 {new
    UIPanel
    main_menu
@@ -63,6 +78,13 @@
    (focus_btn quickplay.btn)
    (load)
    (enter
+      {main_rblogo.tex set_bitmap "fusion/ui/main/main_rblogo.png"}
+      RANDOM_ENVIRONMENT_COLOR
+      ;{$this iterate Mat $l {$l set color {pack_color 1 0 0}}}
+      ;{$this iterate Mat $l {$l set use_environ TRUE}}
+      ;{$this iterate Light $l {$l set color {pack_color 1 0 0}}}
+      ;{$this iterate Environ $l {$l set use_color_adjust TRUE}}
+      ;{$this iterate Environ $l {$l set hue 100}}
       {gamemode set_practice 0}
       {gamemode set_mode init}
       {user_mgr clear_users}

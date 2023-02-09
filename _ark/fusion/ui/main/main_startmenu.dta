@@ -1,4 +1,11 @@
-#include ../init.dta
+#define INIT_MODIFIERS
+(
+;sets default track speed. 1.15 is 115%, 1.30 is 130% and so on.
+{set $trackspeed 1.0}
+{set $speedmod 1.0}
+{set $emulatefps 24}
+{set $leaderspeed $speedmod}
+)
 #define DEFAULT_SPLASH_ALPHA_THRESHOLD
 (175.0)
 {new
@@ -69,6 +76,13 @@
             [start_button_loaded]
             FALSE}
          {$this set_alpha_threshold}
+         {$this iterate UILabel $l {$l set_showing FALSE}}
+         {main_LegoLogo.tex set_bitmap "fusion/ui/splash/lego_dx_lego.png"}
+         {main_rblogo.tex set_bitmap "fusion/ui/splash/lego_dx_rockband.png"}
+         {Main_RockBand_TM_Glow.mesh set_showing FALSE}
+         {Main_RockBand_TM_Glow.mesh set_local_scale 0 0 0}
+         {Main_RockBandLogo.mesh set_local_scale .9 3.5 1}
+         RANDOM_LIGHT_COLOR
          #ifdef HX_PS3
          {start.btn
             set
@@ -409,13 +423,9 @@
    (file
       "../splash/startup_mtv_panel.milo")
    (enter
+      {$this set_showing FALSE}
       {taskmgr clear_tasks}
-      {script_task
-         kTaskUISeconds
-         (script
-            {$this move_on})
-         (once TRUE)
-         (delay 2)})
+         {ui goto_screen main_startscreen})
    (move_on
       {taskmgr clear_tasks}
       {ui goto_screen splash_harmonix_screen})

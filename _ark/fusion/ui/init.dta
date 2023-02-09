@@ -1,8 +1,0 @@
-#define INIT_MODIFIERS
-(
-;sets default track speed. 1.15 is 115%, 1.30 is 130% and so on.
-{set $trackspeed 1.0}
-{set $speedmod 1.0}
-{set $emulatefps 24}
-{set $leaderspeed $speedmod}
-)
