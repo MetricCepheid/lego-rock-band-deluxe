@@ -419,6 +419,10 @@
    (milo_setup
    ;speedmod
 	  {set $speedmod $leaderspeed}
+	  ;set up the FC indicator here
+      {set $guitar_milosong FALSE} {set $bass_milosong FALSE} {set $drum_milosong FALSE}
+	  {set $bass_firstnote FALSE} {set $guitar_firstnote FALSE} {set $drum_firstnote FALSE}
+	  {set $drum_groove_active FALSE} {set $guitar_groove_active FALSE} {set $bass_groove_active FALSE}
 ;setup for venue fps
 	  {if {!= $emulatefps 24} {{$world iterate PostProc $p {$p set emulate_fps $emulatefps}}}
 	  {if {>= {$emulatefps 25} {$char iterate CharHair $hair {$hair reset 35}}
