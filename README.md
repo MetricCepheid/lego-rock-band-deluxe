@@ -13,7 +13,7 @@ This Repo contains everything you need to build an ark for LEGO Rock Band Deluxe
 * Fast start executable modification
 * Additional intro skip scripting to skip the intro movie
 * No family friendly rating check
-* Full Combo indicator per instrument via the multiplier
+* Full Combo indicator per instrument via the multiplier (only shows up after the first note is hit)
 * Bass streak effect from RB3/RB4 available on all instruments
 * All NPCs and licensed musicians usable in quickplay
 * Selectable song speed and track speed by 5% increments
