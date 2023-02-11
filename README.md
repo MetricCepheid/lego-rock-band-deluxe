@@ -22,6 +22,8 @@ This Repo contains everything you need to build an ark for LEGO Rock Band Deluxe
 
 ### Additional Modifications
 * Random hue for splash screen and main menu text
+* Nice (69%) and Awesome Choke (98-99%) callouts on solo completion
+* New main menu music pulled from other Rock Band titles
 
 ## Install
 
