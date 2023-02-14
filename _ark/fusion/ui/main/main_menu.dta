@@ -76,7 +76,8 @@
       "main_menu_artwork.milo")
    #endif
    (focus_btn quickplay.btn)
-   (load)
+   (load
+      {content_mgr start_refresh})
    (enter
       {main_rblogo.tex set_bitmap "fusion/ui/main/main_rblogo.png"}
       RANDOM_ENVIRONMENT_COLOR
