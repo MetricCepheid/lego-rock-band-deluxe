@@ -7,6 +7,8 @@
 (1)
 #endif
 #include macros.dta
+#define GEMCOLOR_SET
+(green red yellow blue orange)
 (band_version
    #include band_version.dta)
 (mem
@@ -258,10 +260,38 @@
       (hx_drums_ps3_konami kControllerDrum)
       (wii_drums kControllerDrum)
       (wii_rodrums kControllerDrum)
-      (hx_xbox kControllerVocals)
-      (digital kControllerVocals)
-      (analog kControllerVocals)
-      (dualshock kControllerVocals)
+      (hx_xbox
+	  {if_else
+        {modifier_mgr is_modifier_active mod_padguitar}
+            kControllerGuitar
+            {if_else
+               {modifier_mgr is_modifier_active mod_paddrum}
+                  kControllerDrum
+                  kControllerVocals}})
+      (digital
+	  {if_else
+        {modifier_mgr is_modifier_active mod_padguitar}
+            kControllerGuitar
+            {if_else
+               {modifier_mgr is_modifier_active mod_paddrum}
+                  kControllerDrum
+                  kControllerVocals}})
+      (analog
+	  {if_else
+        {modifier_mgr is_modifier_active mod_padguitar}
+            kControllerGuitar
+            {if_else
+               {modifier_mgr is_modifier_active mod_paddrum}
+                  kControllerDrum
+                  kControllerVocals}})
+      (dualshock 
+	  {if_else
+        {modifier_mgr is_modifier_active mod_padguitar}
+            kControllerGuitar
+            {if_else
+               {modifier_mgr is_modifier_active mod_paddrum}
+                  kControllerDrum
+                  kControllerVocals}})
       (stagekit_xbox kControllerVocals)
       (wii_remote kControllerVocals)
       (wii_classic kControllerVocals)

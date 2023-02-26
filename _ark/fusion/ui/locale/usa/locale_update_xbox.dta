@@ -575,3 +575,214 @@
 			(reindeer_legs "Reindeer Legs")
 			(santa_legs "Santa Legs")
 			(snowman_legs "Snowman Legs")
+
+(gemcolor_0 "green") ;strings for gem colors and related shit
+(gemcolor_1 "red")
+(gemcolor_2 "yellow")
+(gemcolor_3 "blue")
+(gemcolor_4 "orange")
+
+(colrsliderlbl "Note Colors")
+(tweak_modify "tweaks")
+
+(milosliderlbl
+   "Speed / Framerate")
+(speed_msg
+   "SONG SPEED: %d%%")
+(trackspeed_msg
+   "NOTE SPEED: %d%%")
+(fps_msg
+   "VENUE FRAMERATE: %dFPS")
+(extra_modify
+   "Modifiers")
+(speed_modify
+   "speed / framerate")
+(options_audio
+   "audio settings")
+;overshell
+(os_clr "Note Colors")
+(os_spd "Set Speeds")
+(os_mod "Modifiers")
+(os_gems "Gems")
+(os_smashers "Smashers")
+(os_strk "Streak")
+(os_spotlight "Overdrive")
+(os_trkset "Track Options")
+(os_dxsettings "DELUXE SETTINGS")
+(os_angle "Track Angle")
+; track settings
+(rb1 "Rock Band 1")
+(rb2 "Rock Band 2")
+(rb3 "Rock Band 3")
+(rb4 "Rock Band 4")
+(rb2_bass "RB2 Bass")
+(rb2_drums "RB2 Drums")
+(rb2_guitar "RB2 Guitar")
+(rr "Rock Revolution")
+;; Modifiers
+(mod_awesome_desc "Let MiloHax know that you are really awesome!")
+#ifdef HX_XBOX
+(mod_selectdeploy "BACK Button to Deploy")
+(mod_selectdeploy_desc "BACK button activates overdrive on Drums and Vocals.")
+#else
+(mod_selectdeploy "SELECT Button to Deploy")
+(mod_selectdeploy_desc "SELECT button activates overdrive on Drums and Vocals.")
+#endif
+(mod_nowhammyfx "No Whammy FX")
+(mod_nowhammyfx_desc "Removes the whammy pitchbending")
+(mod_nowhammyfx_obtain "(bug, should be available by default)")
+(mod_rb3sustain "RB3 Sustain Tails")
+(mod_rb3sustain_desc "Makes sustains look similar to RB3")
+(mod_rb3sustain_obtain "(bug, should be available by default)")
+(mod_nocrowd "No Crowd Audio")
+(mod_nocrowd_desc "Shut those pesky fans up!")
+(mod_nocrowd_obtain "(bug, should be available by default)")
+(mod_nomuting "No Track Muting")
+(mod_nomuting_desc "We Got the Beat, even when you don't")
+(mod_nomuting_obtain "(bug, should be available by default)")
+(mod_oggems
+   "OG Gems")
+(mod_oggems_desc 
+   "This restores the gems to vanilla")
+(mod_oggems_obtain 
+   "(bug, should be available by default)")
+(mod_strike
+   "OG Strikeline")
+(mod_strike_desc 
+   "This restores the strikeline to vanilla")
+(mod_strike_obtain 
+   "(bug, should be available by default)")
+(mod_groove
+   "New Highway Skins Only")
+(mod_groove_desc 
+   "This has only new groove and overdrive textures")
+(mod_groove_obtain 
+   "(bug, should be available by default)")
+(mod_vocalgender
+   "Don't Force Vocal Gender")
+(mod_vocalgender_desc 
+   "Doesn't force a vocalist based on gender")
+(mod_vocalgender_obtain 
+   "(bug, should be available by default)")
+(mod_noflames
+   "No Flames")
+(mod_noflames_desc 
+   "Remove flames. Even though they aren't flames")
+(mod_noflames_obtain 
+   "(bug, should be available by default)")
+(mod_legacybass
+   "Legacy Bass Streak")
+(mod_legacybass_desc 
+   "Removes the groove texture from guitar and drum tracks")
+(mod_legacybass_obtain 
+   "(bug, should be available by default)")
+(mod_forceguitar
+   "Force Guitar")
+(mod_forceguitar_desc 
+   "Forces Guitar on every instrument *Alpha")
+(mod_forceguitar_obtain 
+   "(bug, should be available by default)")
+(mod_flashbang 
+   "Firework Gems")
+(mod_flashbang_desc 
+   "Ooooooooooooh. Ahhhhhhhhhhhh.")
+(mod_flashbang_obtain 
+   "(bug, should be available by default)")
+(mod_auto_play 
+   "Autoplay")
+(mod_auto_play_desc 
+   "Ruin the leaderboards and your credibility all at once!")
+(mod_fakejuke 
+   "Jukebox Mode")
+(mod_fakejuke_desc 
+   "Watch your band rock out!")
+(mod_auto_play_obtain 
+   "(bug, should be available by default)")
+(mod_blackvenue 
+   "Black Background")
+#ifdef HX_XBOX
+(mod_blackvenue_desc 
+   "Completely black background in-game. Good for focus and Xenia performance")
+#else
+(mod_blackvenue_desc 
+   "Completely black background in-game. Good for focus and RPCS3 performance")
+#endif
+(mod_blackvenue_obtain 
+   "(bug, should be available by default)")
+(mod_songtitle
+   "Song Title Always On")
+(mod_songtitle_desc 
+   "Reccomended for streamers")
+(mod_songtitle_obtain 
+   "(bug, should be available by default)")
+(mod_songtitlestats
+   "Detailed Song Title")
+(mod_songtitlestats_desc 
+   "Does not work properly for random songs or setlists. You have been warned")
+(mod_songtitlestats_obtain 
+   "(bug, should be available by default)")
+(mod_bre
+   "Enable Big Rock Endings")
+(mod_bre_desc 
+   "You'll be dissapointed if you disable this on drums")
+(mod_bre_obtain 
+   "(bug, should be available by default)")
+(mod_staticfills 
+   "Legacy Drum Fills")
+(mod_staticfills_desc 
+   "I just really like not hitting all of the notes okay?")
+(mod_staticfills_obtain 
+   "(bug, should be available by default)")
+(mod_freestyledrums
+   "Freestyle Drums")
+(mod_freestyledrums_desc 
+   "Rock Band 4 style freestyle drums")
+(mod_freestyledrums_obtain 
+   "(bug, should be available by default)")
+(mod_roygb
+   "GRYBO Gems")
+(mod_roygb_desc
+   "If you hate change, toggle this option!")
+(mod_roygb_obtain
+   "(bug, should be available by default)")
+(mod_paddrum "Pad is Drum") ;paddrum shit
+(mod_paddrum_desc "Good ol' fashioned 4 lane pad play")
+(mod_paddrum_obtain "(bug, should be available by default)")
+(mod_padguitar
+   "Pad is Guitar")
+(mod_padguitar_desc
+   "Good ol' fashioned 5 fret pad play")
+(mod_padguitar_obtain
+   "(bug, should be available by default)")
+(mod_autostrum
+   "Auto Strum")
+(mod_autostrum_desc
+   "Those with no strumming hand, this ones for you!")
+(mod_autostrum_obtain
+   "")
+(mod_autokick
+   "Auto Kick")
+(mod_autokick_desc
+   "Don't have a kick pedal? No problem!")
+(mod_autokick_obtain
+   "")
+(mod_ogtrack
+   "OG Track Textures")
+(mod_ogtrack_desc
+   "If you hate change, toggle this option!")
+(mod_ogtrack_obtain
+   "(bug, should be available by default)")
+(mod_nosustain
+   "No Sustain Tails")
+(mod_nosustain_desc
+   "It's a Guessing game of sustains!")
+(mod_nosustain_obtain
+   "(bug, should be available by default)")
+(mod_mididrum
+   "Midi Drum Bass Kick Fix")
+(mod_mididrum_desc
+   "Use this if you are playing on an e-kit")
+(mod_mididrum_obtain
+   "(bug, should be available by default)")
+(choke_solo 
+   "Awesome Choke!")

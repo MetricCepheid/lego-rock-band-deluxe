@@ -1,0 +1,16 @@
+(features modifier_saving_feature modifier_achievements_feature modifier_online_feature)
+(modifiers
+   (mod_autokick unlocked)
+   #ifdef HX_EE
+   #endif
+   #ifdef HX_WII
+   #else
+   #endif
+   (mod_mididrum unlocked)
+   (mod_padguitar (activate {modifier_mgr deactivate_modifier mod_paddrum}) unlocked) ;updated padguitar to disable paddrum
+   (mod_paddrum (activate {modifier_mgr deactivate_modifier mod_padguitar}) unlocked) ;paddrum disables padguitar
+   (mod_doublespeed
+      (activate
+         {modifier_mgr deactivate_modifier mod_halfspeed})
+      unlocked)
+   (mod_nohud unlocked))
