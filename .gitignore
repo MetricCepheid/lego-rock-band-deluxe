@@ -26,3 +26,8 @@ _xenia/xenia.log
 _xenia/recent.toml
 _build/xbox/gen/main_xbox
 .DS_Store
+dependencies/dev_scripts/__pycache__
+_build/xbox/gen/dxsl_xbox_0.ark
+_build/xbox/dx-settings-loader.xex
+_build/xbox/gen/dxsl_xbox.hdr
+dependencies/dev_scripts/dx-settings-loader/
