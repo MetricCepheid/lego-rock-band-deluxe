@@ -92,7 +92,7 @@
 )
 #define INIT_DTA_READER
 (
-   {set $dxsettings {read_file #ifdef HX_XBOX "GAME:/dx.dta" #endif #ifdef HX_PS3 "GD:/dev_hdd0/game/BLUS30147/USRDIR/dx.dta" #endif}}
+   {set $dxsettings {read_file #ifdef HX_XBOX "GAME:/dx.dta" #endif #ifdef HX_PS3 "GD:/dev_hdd0/game/BLUS30382/USRDIR/dx.dta" #endif}}
    {foreach $entry $dxsettings
       {if {== {elem $entry 0} {basename mic_vols}}
          {set $mic_vol_1
