@@ -63,7 +63,7 @@
       {if_else
          {'||'
             $skip_intro
-            {gamemode get is_drum_trainer}
+            ;{gamemode get is_drum_trainer}
             {gamemode get is_framerate_test}}
          {handle
             ($this intro_skip)}
@@ -99,7 +99,22 @@
                {taskmgr beat}})
          (script
             {handle
-               ($this intro_end)})}
+               ($this intro_end)})
+         ;;Old black venue mod, kept in cases of online users missing black venue
+		{if
+			{modifier_mgr is_modifier_active mod_blackvenue}
+            {do
+               {$world iterate PostProc $p
+               {$p set brightness -800}}}
+            {do
+               {$world iterate PostProc $p
+               {$p set contrast -800}}}
+            {do
+               {$world iterate PostProc $p
+               {$p set lightness -800}}}
+				{do
+					{$world iterate PostProc $p
+					{$p set emulate_fps 1}}}}}
       kDataUnhandled)
    (intro_skip
       {set $guitar_milosong FALSE} {set $bass_milosong FALSE} {set $drum_milosong FALSE}
@@ -138,6 +153,7 @@
                      {elem $levels $ex})}}}}
       kDataUnhandled)
    (game_over
+      {if $already_restarted {{{{gamemode get track_panel} find mtv_overlay} find fade.anim} set_frame 0}} ;remove MTV overlay when track disappears, but only if it's already been restarted by script
       {set $guitar_milosong FALSE} {set $bass_milosong FALSE} {set $drum_milosong FALSE}
       {set $bass_groove_active FALSE} {set $bass_firstnote FALSE} {set $guitar_firstnote FALSE} {set $drum_firstnote FALSE}
 	  {set $drum_groove_active FALSE}
@@ -336,9 +352,7 @@
                {$driver play 0}}}})
    (hide_frames 0)
    (exit
-      {set $guitar_milosong FALSE} {set $bass_milosong FALSE} {set $drum_milosong FALSE}
-      {set $bass_groove_active FALSE} {set $drum_groove_active FALSE} {set $guitar_groove_active FALSE}
-      {set $bass_firstnote FALSE} {set $guitar_firstnote FALSE} {set $drum_firstnote FALSE}
+      {{{{gamemode get track_panel} find mtv_overlay} find fade.anim} set_frame 0}
       {set
          [hide_frames]
          2}
@@ -360,6 +374,7 @@
       #ifndef HX_WII
       {preload_panel clear_cache}
       #endif
+      {{{{gamemode get track_panel} find mtv_overlay} find fade.anim} set_frame 0}
       {char_cache reclaim_characters}
       {game unload_crowd_audio}
       {set
@@ -440,9 +455,30 @@
                TRUE}}
          FALSE})
    (milo_setup
-   ;speedmod
-	  {set $speedmod $leaderspeed}
-	  ;set up the FC indicator here
+;send to network leaders song speed
+      {if {is_leader_local} {session send_msg_to_all {` (set $speedmod {, $leaderspeed}) kNetReliable}}}
+	  {if {is_leader_local} {set $speedmod $leaderspeed}}
+;send to network leaders static fills modifier
+	  ;{if {is_leader_local} {session send_msg_to_all {` (set $netstaticfills {, $leaderstaticfills}) kNetReliable}}}
+	  ;{session send_msg_to_all {` (set $tempstaticfills $leaderstaticfills) kNetReliable}}
+	  ;{session send_msg_to_all {` (if_else {! $netstaticfills} {modifier_mgr deactivate_modifier mod_staticfills} {modifier_mgr activate_modifier mod_staticfills}) kNetReliable}}
+;send to network leaders song title modifier
+	  ;{if {is_leader_local} {session send_msg_to_all {` (set $netsongtitle {, $leadersongtitle}) kNetReliable}}}
+	  ;{session send_msg_to_all {` (set $tempsongtitle $leadersongtitle) kNetReliable}}
+	  ;{session send_msg_to_all {` (if_else {! $netsongtitle} {modifier_mgr deactivate_modifier mod_songtitle} {modifier_mgr activate_modifier mod_songtitle}) kNetReliable}}
+;send to network leaders detailed song title modifier
+	  ;{if {is_leader_local} {session send_msg_to_all {` (set $netsongtitlestats {, $leadersongtitlestats}) kNetReliable}}}
+	  ;{session send_msg_to_all {` (set $tempsongtitlestats $leadersongtitlestats) kNetReliable}}
+	  ;{session send_msg_to_all {` (if_else {! $netsongtitlestats} {modifier_mgr deactivate_modifier mod_songtitlestats} {modifier_mgr activate_modifier mod_songtitlestats}) kNetReliable}}
+;send to network leaders black venue modifier
+	  ;{if {is_leader_local} {session send_msg_to_all {` (set $netblackvenue {, $leaderblackvenue}) kNetReliable}}}
+	  ;{session send_msg_to_all {` (set $tempblackvenue $leaderblackvenue) kNetReliable}}
+	  ;{session send_msg_to_all {` (if_else {! $netblackvenue} {modifier_mgr deactivate_modifier mod_blackvenue} {modifier_mgr activate_modifier mod_blackvenue}) kNetReliable}}
+;send to network leaders roygb modifier
+	  ;{if {is_leader_local} {session send_msg_to_all {` (set $netroygb {, $leaderroygb}) kNetReliable}}}
+	  ;{session send_msg_to_all {` (set $temproygb $leaderroygb) kNetReliable}}
+	  ;{session send_msg_to_all {` (if_else {! $netroygb} {modifier_mgr deactivate_modifier mod_roygb} {modifier_mgr activate_modifier mod_roygb}) kNetReliable}}
+;set up the FC indicator here
       {set $guitar_milosong FALSE} {set $bass_milosong FALSE} {set $drum_milosong FALSE}
 	  {set $bass_firstnote FALSE} {set $guitar_firstnote FALSE} {set $drum_firstnote FALSE}
 	  {set $drum_groove_active FALSE} {set $guitar_groove_active FALSE} {set $bass_groove_active FALSE}
@@ -452,7 +488,26 @@
 	  {$world iterate WorldDir $wd {$wd iterate BandCamShot $bcs
 	  {foreach $property (shake_noisefreq shake_noiseamp) {$bcs set (keyframes $i $property) {'*' {$bcs get (keyframes $i $property)} 0.25}}}
       {foreach $component (x y) {$bcs set (keyframes $i shake_maxangle $component) {'*' {$bcs get (keyframes $i shake_maxangle $component)} 0.25}}}}}}}}
-      )
+;set all players to autoplay if the modifier is active
+      {if {modifier_mgr is_modifier_active mod_auto_play}  {do {beatmatch foreach_active_player $player {$player set_auto_play enable}}}}
+;set for static drums
+      {unless {modifier_mgr is_modifier_active mod_staticfills} {gamemode set allow_drum_fills FALSE}}
+;set for freestyle drums
+      {if {modifier_mgr is_modifier_active mod_freestyledrums} {beatmatch set_fake_hit_gems_in_fill TRUE} {{beatmatch active_player 0} force_fill TRUE} {{beatmatch active_player 0} set_alternate_fill_mapping TRUE}}
+	  )
+   (milo_exit
+      {set $speedmod $leaderspeed}
+;reset to local users state for static fills modifier
+	  ;{if_else {! $tempstaticfills} {modifier_mgr deactivate_modifier mod_staticfills} {modifier_mgr activate_modifier mod_staticfills}}
+;reset to local users state for song title modifier
+	  ;{if_else {! $tempsongtitle} {modifier_mgr deactivate_modifier mod_songtitle} {modifier_mgr activate_modifier mod_songtitle}}
+;reset to local users state for song title modifier
+	  ;{if_else {! $tempsongtitlestats} {modifier_mgr deactivate_modifier mod_songtitlestats} {modifier_mgr activate_modifier mod_songtitlestats}}
+;reset to local users state for black venue modifier
+	  ;{if_else {! $tempblackvenue} {modifier_mgr deactivate_modifier mod_blackvenue} {modifier_mgr activate_modifier mod_blackvenue}}
+;reset to local users state for roygb
+	  ;{if_else {! $temproygb} {modifier_mgr deactivate_modifier mod_roygb} {modifier_mgr activate_modifier mod_roygb}}
+	  )
    (enter
       {$this milo_setup}
       {if
@@ -497,6 +552,7 @@
             {profile_mgr update_mic_gain $player_num}}}
       {handle
          ($this my_enter)}
+      {$this milo_setup}
       {if_else
          {gamemode get is_jukebox}
          {input_mgr set_limit kLimitNone}
@@ -505,6 +561,9 @@
       {platform_mgr check_signin_state_msg}
       #endif)
    (exit
+      {set $guitar_milosong FALSE} {set $bass_milosong FALSE} {set $drum_milosong FALSE}
+      {set $bass_groove_active FALSE} {set $drum_groove_active FALSE} {set $guitar_groove_active FALSE}
+      {set $bass_firstnote FALSE} {set $guitar_firstnote FALSE} {set $drum_firstnote FALSE}
       {platform_mgr remove_sink $this ui_changed}
       #ifdef HX_WII
       {platform_mgr remove_sink $this wii_disc_error}
@@ -529,7 +588,8 @@
                mic_lost}}
          {band_ui dismiss_event_no_pad_checks}}
       #endif
-      {input_mgr check_controllers})
+      {input_mgr check_controllers}
+      {$this milo_exit})
    (UI_CHANGED_MSG
       {$this on_guide_change})
    #ifdef HX_WII

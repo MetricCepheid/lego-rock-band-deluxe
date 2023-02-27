@@ -45,7 +45,7 @@
    (metronome_check_index 0)
    (hud_check_index 0)
    (pause_commands
-      (pause_resume pause_restart lefty_flip vocal_options practice_new_section new_song return_world_map choose_new_challenge choose_new_battle band_members forfeit metronome pause_quit))
+      (pause_resume pause_restart lefty_flip vocal_options practice_new_section new_song return_world_map choose_new_challenge free_camera choose_new_battle band_members forfeit metronome pause_quit))
    (active_commands
       ())
    (chose_quit FALSE)
@@ -184,6 +184,8 @@
                   {ui
                      goto_screen
                      {gamemode get confirm_restart_screen}}})
+            (free_camera
+               {cycle_free_camera})
             (lefty_flip
                {if
                   {!=
@@ -249,6 +251,11 @@
                   {ui
                      goto_screen
                      {gamemode get confirm_quit_screen}}})
+            (free_camera
+                  {if
+                     {modifier_mgr is_modifier_active mod_auto_play}
+                     {if {! {modifier_mgr is_modifier_active mod_blackvenue}}
+                        {set $added TRUE}}})
             (forfeit
                {set
                   [exit_destination]
@@ -270,14 +277,16 @@
                   $met}
                {$this update_metronome_check})
             (pause_quit
+               {set $already_restarted FALSE} ;clear flag so next song will restart once
                {set
                   [exit_destination]
                   exit_quit}
                {set
                   [resync_on_exit]
                   FALSE}
-               {$this on_quit}
-               {game demo_clear_prefabs})}})
+               {ui
+                  goto_screen
+                  {gamemode get confirm_quit_screen}})}})
    (set_up_buttons
       {set
          [button_count]
@@ -320,7 +329,6 @@
                (pause_resume
                   {set $added TRUE})
                (pause_restart
-                  #ifndef KIOSK_DEMO
                   {if
                      {!
                         {gamemode get is_drum_trainer}}
@@ -332,10 +340,7 @@
                               {==
                                  {gamemode get player_arrangement}
                                  kArrangeBand}}}
-                        {set $added TRUE}}}
-                  #else
-                  FALSE
-                  #endif)
+                        {set $added TRUE}}})
                (lefty_flip
                   {if
                      {gamemode get has_track}
@@ -353,31 +358,22 @@
                               get_lefty}}
                         {$this update_lefty_check}}})
                (vocal_options
-                  #ifndef KIOSK_DEMO
                   {if
                      {gamemode get has_track}
                      {if
                         {==
                            vocals
                            {$band_user get_track_sym}}
-                        {set $added TRUE}}}
-                  #else
-                  FALSE
-                  #endif)
+                        {set $added TRUE}}})
                (practice_new_section
-                  #ifndef KIOSK_DEMO
                   {if
                      {&&
                         {gamemode get is_practice}
                         {!=
                            vocals
                            {$band_user get_track_sym}}}
-                     {set $added TRUE}}
-                  #else
-                  FALSE
-                  #endif)
+                     {set $added TRUE}})
                (new_song
-                  #ifndef KIOSK_DEMO
                   {if
                      {&&
                         {!=
@@ -391,32 +387,20 @@
                         {==
                            {gamemode get is_challenge}
                            FALSE}}
-                     {set $added TRUE}}
-                  #else
-                  FALSE
-                  #endif)
+                     {set $added TRUE}})
                (return_world_map
-                  #ifndef KIOSK_DEMO
                   {if
                      {&&
                         {gamemode is_tour}
                         {==
                            {gamemode get is_practice}
                            FALSE}}
-                     {set $added TRUE}}
-                  #else
-                  FALSE
-                  #endif)
+                     {set $added TRUE}})
                (forfeit
-                  #ifndef KIOSK_DEMO
                   {if
                      {gamemode get ranked}
-                     {set $added TRUE}}
-                  #else
-                  FALSE
-                  #endif)
+                     {set $added TRUE}})
                (metronome
-                  #ifndef KIOSK_DEMO
                   {if
                      {gamemode get is_drum_trainer}
                      {set $added TRUE}
@@ -428,10 +412,7 @@
                         {{gamemode get game_panel}
                            get
                            metronome}}
-                     {$this update_metronome_check}}
-                  #else
-                  FALSE
-                  #endif)
+                     {$this update_metronome_check}})
                (pause_quit
                   {if
                      {gamemode get show_pause_quit}
@@ -547,6 +528,7 @@
             {ui pop_screen post_game_loading_screen}}
          {game restart_mid_game}})
    (on_quit
+      {set $already_restarted FALSE} ;ensuring that flag is cleared when exiting a song
       {set
          [chose_quit]
          TRUE}
@@ -718,10 +700,6 @@
          $component
          (yes.btn
             {do
-               {if
-                  {gamemode get is_tour}
-                  {{tour band}
-                     lose_song}}
                {pause_panel on_restart}})
          (no.btn
             {do

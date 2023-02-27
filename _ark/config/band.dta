@@ -6,9 +6,10 @@
 #define PATCH_NO_STICKERS
 (1)
 #endif
-#include macros.dta
 #define GEMCOLOR_SET
 (green red yellow blue orange)
+
+#include macros.dta
 (band_version
    #include band_version.dta)
 (mem

@@ -288,6 +288,7 @@
    ENDGAME_PANEL_HANDLERS
    ENDGAME_PANEL_PERCENTAGE_HANDLERS
    (enter
+      {set $already_restarted FALSE} ;ensure the next time the track loads, it restarts once to be safe
       {platform_mgr set_notify_ui_location kOSNotifyBottomCenter}
       {$this set_results}
       #ifndef HX_OG

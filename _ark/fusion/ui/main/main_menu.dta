@@ -244,7 +244,7 @@
                {set
                   [focus_btn]
                   store.btn}
-				  {ui goto_screen dx_options_audio_screen}})
+				  {ui goto_screen options_milo_screen}})
          (options.btn
             {set
                [focus_btn]

@@ -206,35 +206,12 @@
    {if $gemcustomtexture
       {{$this find prism_gems.tex} set_bitmap {sprint "track/gems/prism_gems_" $gem ".png"}}
 	  {if_else {exists {sprint "track/gems/prism_gem_emissive_" $gem ".png"}}
-		{do
-			{{$this find prism_gem_emissive.tex} set_bitmap {sprint "track/gems/prism_gem_emissive_" $gem ".png"}}
-			{if_else {exists {sprint "track/gems/prism_gem_emissive_3_player_" $gem ".png"}}
-				{{$this find prism_gem_emissive_3_player.tex} set_bitmap {sprint "track/gems/prism_gem_emissive_3_player_" $gem ".png"}}
-				{{$this find prism_gem_emissive_3_player.tex} set_bitmap {sprint "track/gems/prism_gem_emissive_" $gem ".png"}}
-			}
+			{{$this find prism_gem_lod.tex} set_bitmap {sprint "track/gems/prism_gem_emissive_" $gem ".png"}}
+			kDataUnhandled
 		}
 		{if {exists {sprint "track/gems/prism_gem_emissive_3_player_" $gem ".png"}}
-			{{$this find prism_gem_emissive.tex} set_bitmap {sprint "track/gems/prism_gem_emissive_3_player_" $gem ".png"}}
+			{{$this find prism_gem_lod.tex} set_bitmap {sprint "track/gems/prism_gem_emissive_3_player_" $gem ".png"}}
 		}
-	  }
-   }
-
-   {if $smashercustomtexture
-   {do
-      {{$this find black_smasher_blue_nomip.tex} set_bitmap {sprint "track/smashers/black_smasher_blue_" $smasher ".png"}}
-      {{$this find black_smasher_green_nomip.tex} set_bitmap {sprint "track/smashers/black_smasher_green_" $smasher ".png"}}
-      {{$this find black_smasher_norm.tex} set_bitmap {sprint "track/smashers/black_smasher_norm_" $smasher ".png"}}
-      {{$this find black_smasher_spec.tex} set_bitmap {sprint "track/smashers/black_smasher_spec_" $smasher ".png"}}
-      {{$this find black_smasher_norm_drums.tex} set_bitmap {sprint "track/smashers/black_smasher_norm_drums_" $smasher ".png"}}
-      {{$this find black_smasher_orange_nomip.tex} set_bitmap {sprint "track/smashers/black_smasher_orange_" $smasher ".png"}}
-      {{$this find black_smasher_red_nomip.tex} set_bitmap {sprint "track/smashers/black_smasher_red_" $smasher ".png"}}
-      {{$this find black_smasher_yellow_nomip.tex} set_bitmap {sprint "track/smashers/black_smasher_yellow_" $smasher ".png"}}
-      {{$this find square_smasher_bright_blue.tex} set_bitmap {sprint "track/smashers/square_smasher_bright_blue_" $smasher ".png"}}
-      {{$this find square_smasher_bright_green.tex} set_bitmap {sprint "track/smashers/square_smasher_bright_green_" $smasher ".png"}}
-      {{$this find square_smasher_bright_orange.tex} set_bitmap {sprint "track/smashers/square_smasher_bright_orange_" $smasher ".png"}}
-      {{$this find square_smasher_bright_red.tex} set_bitmap {sprint "track/smashers/square_smasher_bright_red_" $smasher ".png"}}
-      {{$this find square_smasher_bright_yellow.tex} set_bitmap {sprint "track/smashers/square_smasher_bright_yellow_" $smasher ".png"}}
-   }
    }
    {if $streakcustomtexture
       {{$this find bass_superstreak_pattern.tex} set_bitmap {sprint "track/streak/" $streak ".png"}}
@@ -243,16 +220,6 @@
       {{$this find spotlight_bass_track.tex} set_bitmap {sprint "track/spotlight/" $spotlight ".png"}}
       {{$this find spotlight_guitar_track.tex} set_bitmap {sprint "track/spotlight/" $spotlight ".png"}}
       {{$this find spotlight_drums_track.tex} set_bitmap {sprint "track/spotlight/" $spotlight ".png"}}
-      {if_else {exists {sprint "track/spotlight/" $spotlight "_emissive.png"}}
-         {do
-            {{$this find spotlight_bass_track_emissive.tex} set_bitmap {sprint "track/spotlight/" $spotlight "_emissive.png"}}
-            {{$this find spotlight_guitar_track_emmissive.tex} set_bitmap {sprint "track/spotlight/" $spotlight "_emissive.png"}}
-         }
-         {do
-            {{$this find spotlight_bass_track_emissive.tex} set_bitmap "track/custom_track_textures/_no_highway.png"}
-            {{$this find spotlight_guitar_track_emmissive.tex} set_bitmap "track/custom_track_textures/_no_highway.png"}
-         }
-      }
    }
    {$this play_intro}
       {if

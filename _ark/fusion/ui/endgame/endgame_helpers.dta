@@ -574,18 +574,23 @@
                         {$pxy exists noteshit.lbl}
                         {{$pxy find noteshit.lbl}
                            set_localized
+                           {if_else
+                              {modifier_mgr is_modifier_active mod_auto_play}
+                              "autoplay"
                            {sprintf
                               {localize endgame_player_noteshit_fmt}
                               {int
                                  {'*'
                                     100
                                     {{$pcfg player}
-                                       notes_hit_fraction}}}}}}
+                                       notes_hit_fraction}}}}}}}
                      {if
                         {$pxy exists streak.lbl}
                         {{$pxy find streak.lbl}
                            set_localized
                            {if_else
+                              {if_else {modifier_mgr is_modifier_active mod_auto_play}
+                                 {localize endgame_player_audition_autoplayer}
                               {==
                                  {{$pcfg player}
                                     instrument}
@@ -597,7 +602,7 @@
                               {sprintf
                                  {localize endgame_note_streak}
                                  {{$pcfg player}
-                                    longest_streak}}}}}
+                                    longest_streak}}}}}}
                      {if
                         {$pxy exists difficulty.lbl}
                         {if_else
@@ -618,20 +623,21 @@
                            {'||'
                               {gamemode is_h2h_arrangement}
                               {gamemode is_solo}}
-                           {{$pxy find award.lbl}
-                              set_showing
-                              FALSE}
+                           {{do
+                                 ($some_award {choose_award $player SELECTED_AWARDS})
+                                    {push_back SELECTED_AWARDS $some_award}
+                                    {$pcfg set previous_award $some_award}
+                                {{$pxy find award.lbl} set_localized {localize $some_award}}}
+							     {if_else {== {$some_award award_full_combo}}
+                                   {{$pxy find award.lbl} set_showing TRUE}
+                                   {{$pxy find award.lbl} set_showing FALSE}}}
                            {do
                               ($some_award
                                  {choose_award $player SELECTED_AWARDS})
                               {push_back SELECTED_AWARDS $some_award}
                               {$pcfg set previous_award $some_award}
-                              {{$pxy find award.lbl}
-                                 set_localized
-                                 {localize $some_award}}
-                              {{$pxy find award.lbl}
-                                 set_showing
-                                 TRUE}}}}}}}}}))
+                              {{$pxy find award.lbl} set_localized {localize $some_award}}
+                                {{$pxy find award.lbl} set_showing TRUE}}}}}}}}}))
 {new
    UIPanel
    endgame_background_panel

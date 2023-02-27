@@ -99,6 +99,7 @@
       init
       {find $syscfg store netcache_init}}
    #endif
+   #include overshell.dta
    {new
       MainScreen
       main_screen
