@@ -24,7 +24,7 @@ else:
     dx_res = build_dxsl_ark()
 
 rb2dx_res = True
-if check_git_updated(repo_url="https://github.com/hmxmilohax/rock-band-2-deluxe", repo_root_path=root_dir):
+if check_git_updated(repo_url="https://github.com/hmxmilohax/lego-rock-band-deluxe", repo_root_path=root_dir):
     if not root_dir.joinpath("_build/xbox/gen/patch_xbox_0.ark").is_file():
         print("LEGO Rock Band Deluxe ark not found, building it now...")
         rb2dx_res = build_patch_ark(True)
