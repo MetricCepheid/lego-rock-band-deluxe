@@ -203,24 +203,24 @@
       {{$this loaded_dir}
          reset})
    (on_extend
-   {if $gemcustomtexture
-      {{$this find prism_gems.tex} set_bitmap {sprint "track/gems/prism_gems_" $gem ".png"}}
-	  {if_else {exists {sprint "track/gems/prism_gem_emissive_" $gem ".png"}}
-			{{$this find prism_gem_lod.tex} set_bitmap {sprint "track/gems/prism_gem_emissive_" $gem ".png"}}
-			kDataUnhandled
-		}
-		{if {exists {sprint "track/gems/prism_gem_emissive_3_player_" $gem ".png"}}
-			{{$this find prism_gem_lod.tex} set_bitmap {sprint "track/gems/prism_gem_emissive_3_player_" $gem ".png"}}
-		}
-   }
-   {if $streakcustomtexture
-      {{$this find bass_superstreak_pattern.tex} set_bitmap {sprint "track/streak/" $streak ".png"}}
-   }
-   {if $spotlightcustomtexture
-      {{$this find spotlight_bass_track.tex} set_bitmap {sprint "track/spotlight/" $spotlight ".png"}}
-      {{$this find spotlight_guitar_track.tex} set_bitmap {sprint "track/spotlight/" $spotlight ".png"}}
-      {{$this find spotlight_drums_track.tex} set_bitmap {sprint "track/spotlight/" $spotlight ".png"}}
-   }
+   ;{if $gemcustomtexture
+   ;   {{$this find prism_gems.tex} set_bitmap {sprint "track/gems/prism_gems_" $gem ".png"}}
+	;  {if_else {exists {sprint "track/gems/prism_gem_emissive_" $gem ".png"}}
+	;		{{$this find prism_gem_lod.tex} set_bitmap {sprint "track/gems/prism_gem_emissive_" $gem ".png"}}
+	;		kDataUnhandled
+	;	}
+	;	{if {exists {sprint "track/gems/prism_gem_emissive_3_player_" $gem ".png"}}
+	;		{{$this find prism_gem_lod.tex} set_bitmap {sprint "track/gems/prism_gem_emissive_3_player_" $gem ".png"}}
+	;	}
+   ;}
+   ;{if $streakcustomtexture
+   ;   {{$this find bass_superstreak_pattern.tex} set_bitmap {sprint "track/streak/" $streak ".png"}}
+   ;}
+   ;{if $spotlightcustomtexture
+   ;   {{$this find spotlight_bass_track.tex} set_bitmap {sprint "track/spotlight/" $spotlight ".png"}}
+   ;   {{$this find spotlight_guitar_track.tex} set_bitmap {sprint "track/spotlight/" $spotlight ".png"}}
+   ;   {{$this find spotlight_drums_track.tex} set_bitmap {sprint "track/spotlight/" $spotlight ".png"}}
+   ;}
    {$this play_intro}
       {if
          {&&
