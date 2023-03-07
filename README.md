@@ -41,7 +41,7 @@ This repo contains everything you need to build LEGO Rock Band Deluxe for PlaySt
   - [Xbox 360 Troubleshooting](#xbox-360-troubleshooting)
 - [Dependencies](#dependencies)
 
-## Features
+# Features
 
 ***LEGO Rock Band Deluxe is nearly feature-identical to [Rock Band 2 Deluxe](https://github.com/hmxmilohax/rock-band-2-deluxe)!***
 
