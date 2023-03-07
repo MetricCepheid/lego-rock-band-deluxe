@@ -45,7 +45,7 @@ This repo contains everything you need to build LEGO Rock Band Deluxe for PlaySt
 
 ***LEGO Rock Band Deluxe is nearly feature-identical to [Rock Band 2 Deluxe](https://github.com/hmxmilohax/rock-band-2-deluxe)!***
 
-### Quality of Life
+## Quality of Life
 * No family friendly song rating check
 * No strum limit executable modification
 * Fast start executable modification
@@ -62,7 +62,7 @@ This repo contains everything you need to build LEGO Rock Band Deluxe for PlaySt
 * Detailed song title modifier including album, year, track number (does not work properly in random/setlists)
 * Manual calibration adjusts by 1ms instad of 5ms
 
-### Authoring
+## Authoring
 * Author shown on song title - in your songs.dta `(author `Author Name`)`
 * Autoplay modifier for chart demos
 * Gameplay watermarks to deter abuse of autoplay including -
@@ -70,7 +70,7 @@ This repo contains everything you need to build LEGO Rock Band Deluxe for PlaySt
     * Manipulating MTV Overlay
 * Cycle camera menu button - available in-game when autoplay is enabled
 
-### Additional Modifications
+## Additional Modifications
 * Random hue for splash screen and main menu text
 * Selectable colors per fret
 * Several modifiers to change the look of the highway/track
