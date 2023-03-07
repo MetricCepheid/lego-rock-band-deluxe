@@ -62,7 +62,7 @@ This repo contains everything you need to build LEGO Rock Band Deluxe for PlaySt
 * Detailed song title modifier including album, year, track number (does not work properly in random/setlists)
 * Manual calibration adjusts by 1ms instad of 5ms
 
-## Authoring
+### Authoring
 * Author shown on song title - in your songs.dta `(author `Author Name`)`
 * Autoplay modifier for chart demos
 * Gameplay watermarks to deter abuse of autoplay including -
